@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+    <html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device,initial-scale=1.0">
+        <title>Report Finanziario Semplice</title>
+        <link rel="stylesheet" href="CSS/styles.css">        
+        <body><header>
+	<div class="nav-bar">
+		<span class="logo">FinTable</span> 		
+	</div>
+	<nav>
+			<ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="ElencoReport.html">AllReports</a></li>              
+            <li><a href="ElencoReport_PortfolioPersonale.html">MyPortfolio</a></li>
+            <li><a href="ElencoReportDaAnalizzare.html">BestScores</a></li> 
+            <li><a href="ElencoReportAnalizzati.html">BestTrades</a></li>
+            <li><a href="ElencoReportBestTrade.html">BestTradesStrategy</a></li>
+            <li><a href="ElencoReportBUYSELLTrade.html">Tickers in Accumulo/Declino</a></li>
+        </ul>    
+       </nav>		
+	</header>  
+                    
+
+            <section id="home" class="container2">
+                <h2>Riepilogo dei  Tickers in Accumulo (possibile BUY) e Declino (probabile SELL): </h2>
+                <div class="report-section">
+                    <div class="analisi-container">
+                        <div class="analisi-dentro">
+                            
+                            <table border="1" class="dataframe table table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Ticker</th>
+      <th>Data Report</th>
+      <th>Score</th>
+      <th>Settore</th>
+      <th>Durata</th>
+      <th>Segnale su Breve Periodo</th>
+      <th>Segnale su Medio Periodo</th>
+      <th>Segnale su Lungo Periodo</th>
+      <th>Fase Mercato Globale</th>
+      <th>Fase Ticker</th>
+      <th>ATR</th>
+      <th>Entry</th>
+      <th>TP</th>
+      <th>SL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="MTCH_report.html" target="_blank">MTCH</a></td>
+      <td>19-07-2025</td>
+      <td>61.0</td>
+      <td>Communication Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>0.76</td>
+      <td>€30.37</td>
+      <td>€33.41</td>
+      <td>€28.85</td>
+    </tr>
+    <tr>
+      <td><a href="BBY_report.html" target="_blank">BBY</a></td>
+      <td>19-07-2025</td>
+      <td>34.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Breve Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>2.17</td>
+      <td>€63.25</td>
+      <td>€65.78</td>
+      <td>€61.99</td>
+    </tr>
+    <tr>
+      <td><a href="KMX_report.html" target="_blank">KMX</a></td>
+      <td>19-07-2025</td>
+      <td>35.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Breve Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Declino</td>
+      <td>2.14</td>
+      <td>€58.15</td>
+      <td>€60.48</td>
+      <td>€56.99</td>
+    </tr>
+    <tr>
+      <td><a href="CMG_report.html" target="_blank">CMG</a></td>
+      <td>19-07-2025</td>
+      <td>48.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>1.33</td>
+      <td>€50.24</td>
+      <td>€55.26</td>
+      <td>€47.72</td>
+    </tr>
+    <tr>
+      <td><a href="DECK_report.html" target="_blank">DECK</a></td>
+      <td>19-07-2025</td>
+      <td>48.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Breve Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>3.26</td>
+      <td>€94.61</td>
+      <td>€98.39</td>
+      <td>€92.72</td>
+    </tr>
+    <tr>
+      <td><a href="GPC_report.html" target="_blank">GPC</a></td>
+      <td>19-07-2025</td>
+      <td>48.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>2.38</td>
+      <td>€116.22</td>
+      <td>€127.85</td>
+      <td>€110.41</td>
+    </tr>
+    <tr>
+      <td><a href="HD_report.html" target="_blank">HD</a></td>
+      <td>19-07-2025</td>
+      <td>52.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Declino</td>
+      <td>7.32</td>
+      <td>€337.61</td>
+      <td>€371.37</td>
+      <td>€320.73</td>
+    </tr>
+    <tr>
+      <td><a href="BG_report.html" target="_blank">BG</a></td>
+      <td>19-07-2025</td>
+      <td>39.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Declino</td>
+      <td>2.15</td>
+      <td>€68.49</td>
+      <td>€75.33</td>
+      <td>€65.06</td>
+    </tr>
+    <tr>
+      <td><a href="CHD_report.html" target="_blank">CHD</a></td>
+      <td>19-07-2025</td>
+      <td>40.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>1.48</td>
+      <td>€91.48</td>
+      <td>€100.62</td>
+      <td>€86.90</td>
+    </tr>
+    <tr>
+      <td><a href="CL_report.html" target="_blank">CL</a></td>
+      <td>19-07-2025</td>
+      <td>47.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>1.44</td>
+      <td>€82.19</td>
+      <td>€90.41</td>
+      <td>€78.08</td>
+    </tr>
+    <tr>
+      <td><a href="CAG_report.html" target="_blank">CAG</a></td>
+      <td>19-07-2025</td>
+      <td>38.0</td>
+      <td>Consumer Defensive</td>
+      <td>Breve Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Declino</td>
+      <td>0.56</td>
+      <td>€17.76</td>
+      <td>€18.47</td>
+      <td>€17.40</td>
+    </tr>
+    <tr>
+      <td><a href="HRL_report.html" target="_blank">HRL</a></td>
+      <td>19-07-2025</td>
+      <td>35.0</td>
+      <td>Consumer Defensive</td>
+      <td>Breve Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Declino</td>
+      <td>0.76</td>
+      <td>€27.84</td>
+      <td>€28.95</td>
+      <td>€27.28</td>
+    </tr>
+    <tr>
+      <td><a href="AON_report.html" target="_blank">AON</a></td>
+      <td>19-07-2025</td>
+      <td>51.0</td>
+      <td>Financial Services</td>
+      <td>Breve Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>6.08</td>
+      <td>€334.01</td>
+      <td>€347.37</td>
+      <td>€327.33</td>
+    </tr>
+    <tr>
+      <td><a href="ACGL_report.html" target="_blank">ACGL</a></td>
+      <td>19-07-2025</td>
+      <td>59.0</td>
+      <td>Financial Services</td>
+      <td>Breve Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Declino</td>
+      <td>1.98</td>
+      <td>€83.29</td>
+      <td>€86.62</td>
+      <td>€81.62</td>
+    </tr>
+    <tr>
+      <td><a href="AIZ_report.html" target="_blank">AIZ</a></td>
+      <td>19-07-2025</td>
+      <td>52.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Declino</td>
+      <td>3.72</td>
+      <td>€176.91</td>
+      <td>€194.60</td>
+      <td>€168.06</td>
+    </tr>
+    <tr>
+      <td><a href="DOV_report.html" target="_blank">DOV</a></td>
+      <td>19-07-2025</td>
+      <td>52.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 100%</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>3.38</td>
+      <td>€179.46</td>
+      <td>€197.40</td>
+      <td>€170.48</td>
+    </tr>
+    <tr>
+      <td><a href="EXPD_report.html" target="_blank">EXPD</a></td>
+      <td>19-07-2025</td>
+      <td>38.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>2.35</td>
+      <td>€107.11</td>
+      <td>€117.82</td>
+      <td>€101.76</td>
+    </tr>
+    <tr>
+      <td><a href="FDX_report.html" target="_blank">FDX</a></td>
+      <td>19-07-2025</td>
+      <td>42.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>5.05</td>
+      <td>€214.56</td>
+      <td>€236.01</td>
+      <td>€203.83</td>
+    </tr>
+    <tr>
+      <td><a href="FTV_report.html" target="_blank">FTV</a></td>
+      <td>19-07-2025</td>
+      <td>66.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Declino</td>
+      <td>1.09</td>
+      <td>€48.19</td>
+      <td>€53.01</td>
+      <td>€45.78</td>
+    </tr>
+    <tr>
+      <td><a href="GNRC_report.html" target="_blank">GNRC</a></td>
+      <td>19-07-2025</td>
+      <td>56.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>3.59</td>
+      <td>€140.54</td>
+      <td>€154.60</td>
+      <td>€133.52</td>
+    </tr>
+    <tr>
+      <td><a href="IEX_report.html" target="_blank">IEX</a></td>
+      <td>19-07-2025</td>
+      <td>46.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>3.78</td>
+      <td>€172.97</td>
+      <td>€190.26</td>
+      <td>€164.32</td>
+    </tr>
+    <tr>
+      <td><a href="ITW_report.html" target="_blank">ITW</a></td>
+      <td>19-07-2025</td>
+      <td>60.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>3.89</td>
+      <td>€242.96</td>
+      <td>€267.26</td>
+      <td>€230.81</td>
+    </tr>
+    <tr>
+      <td><a href="ENPH_report.html" target="_blank">ENPH</a></td>
+      <td>19-07-2025</td>
+      <td>63.0</td>
+      <td>Energy</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Declino</td>
+      <td>2.34</td>
+      <td>€35.69</td>
+      <td>€39.26</td>
+      <td>€33.91</td>
+    </tr>
+    <tr>
+      <td><a href="EPAM_report.html" target="_blank">EPAM</a></td>
+      <td>19-07-2025</td>
+      <td>38.0</td>
+      <td>Technology</td>
+      <td>Breve Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Declino</td>
+      <td>5.29</td>
+      <td>€153.74</td>
+      <td>€159.89</td>
+      <td>€150.66</td>
+    </tr>
+    <tr>
+      <td><a href="FICO_report.html" target="_blank">FICO</a></td>
+      <td>19-07-2025</td>
+      <td>43.0</td>
+      <td>Technology</td>
+      <td>Breve Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Declino</td>
+      <td>79.02</td>
+      <td>€1411.49</td>
+      <td>€1467.95</td>
+      <td>€1383.26</td>
+    </tr>
+    <tr>
+      <td><a href="FSLR_report.html" target="_blank">FSLR</a></td>
+      <td>19-07-2025</td>
+      <td>60.0</td>
+      <td>Energy</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>8.87</td>
+      <td>€160.65</td>
+      <td>€176.72</td>
+      <td>€152.62</td>
+    </tr>
+    <tr>
+      <td><a href="IT_report.html" target="_blank">IT</a></td>
+      <td>19-07-2025</td>
+      <td>44.0</td>
+      <td>Technology</td>
+      <td>Breve Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Declino</td>
+      <td>10.05</td>
+      <td>€338.56</td>
+      <td>€352.10</td>
+      <td>€331.79</td>
+    </tr>
+    <tr>
+      <td><a href="IFF_report.html" target="_blank">IFF</a></td>
+      <td>19-07-2025</td>
+      <td>51.0</td>
+      <td>Basic Materials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>1.42</td>
+      <td>€70.60</td>
+      <td>€77.66</td>
+      <td>€67.07</td>
+    </tr>
+    <tr>
+      <td><a href="IP_report.html" target="_blank">IP</a></td>
+      <td>19-07-2025</td>
+      <td>66.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>1.21</td>
+      <td>€47.79</td>
+      <td>€52.57</td>
+      <td>€45.40</td>
+    </tr>
+    <tr>
+      <td><a href="LYB_report.html" target="_blank">LYB</a></td>
+      <td>19-07-2025</td>
+      <td>66.0</td>
+      <td>Basic Materials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>1.85</td>
+      <td>€59.26</td>
+      <td>€65.19</td>
+      <td>€56.30</td>
+    </tr>
+    <tr>
+      <td><a href="NUE_report.html" target="_blank">NUE</a></td>
+      <td>19-07-2025</td>
+      <td>56.0</td>
+      <td>Basic Materials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>3.52</td>
+      <td>€132.04</td>
+      <td>€145.24</td>
+      <td>€125.44</td>
+    </tr>
+    <tr>
+      <td><a href="PKG_report.html" target="_blank">PKG</a></td>
+      <td>19-07-2025</td>
+      <td>63.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>3.69</td>
+      <td>€190.37</td>
+      <td>€209.41</td>
+      <td>€180.85</td>
+    </tr>
+    <tr>
+      <td><a href="PPG_report.html" target="_blank">PPG</a></td>
+      <td>19-07-2025</td>
+      <td>53.0</td>
+      <td>Basic Materials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>2.31</td>
+      <td>€109.12</td>
+      <td>€120.03</td>
+      <td>€103.66</td>
+    </tr>
+    <tr>
+      <td><a href="SHW_report.html" target="_blank">SHW</a></td>
+      <td>19-07-2025</td>
+      <td>52.0</td>
+      <td>Basic Materials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>6.17</td>
+      <td>€319.98</td>
+      <td>€351.98</td>
+      <td>€303.98</td>
+    </tr>
+    <tr>
+      <td><a href="SW_report.html" target="_blank">SW</a></td>
+      <td>19-07-2025</td>
+      <td>55.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>1.16</td>
+      <td>€43.22</td>
+      <td>€47.55</td>
+      <td>€41.06</td>
+    </tr>
+    <tr>
+      <td><a href="FE_report.html" target="_blank">FE</a></td>
+      <td>19-07-2025</td>
+      <td>46.0</td>
+      <td>Utilities</td>
+      <td>Breve Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>0.55</td>
+      <td>€38.26</td>
+      <td>€39.79</td>
+      <td>€37.49</td>
+    </tr>
+    <tr>
+      <td><a href="PCG_report.html" target="_blank">PCG</a></td>
+      <td>19-07-2025</td>
+      <td>60.0</td>
+      <td>Utilities</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Declino</td>
+      <td>0.33</td>
+      <td>€12.44</td>
+      <td>€13.69</td>
+      <td>€11.82</td>
+    </tr>
+    <tr>
+      <td><a href="LKQ_report.html" target="_blank">LKQ</a></td>
+      <td>19-07-2025</td>
+      <td>52.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>0.83</td>
+      <td>€35.19</td>
+      <td>€38.71</td>
+      <td>€33.43</td>
+    </tr>
+    <tr>
+      <td><a href="LULU_report.html" target="_blank">LULU</a></td>
+      <td>19-07-2025</td>
+      <td>45.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Breve Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>7.30</td>
+      <td>€218.18</td>
+      <td>€226.90</td>
+      <td>€213.81</td>
+    </tr>
+    <tr>
+      <td><a href="MGM_report.html" target="_blank">MGM</a></td>
+      <td>19-07-2025</td>
+      <td>48.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>0.95</td>
+      <td>€35.24</td>
+      <td>€38.76</td>
+      <td>€33.47</td>
+    </tr>
+    <tr>
+      <td><a href="NKE_report.html" target="_blank">NKE</a></td>
+      <td>19-07-2025</td>
+      <td>61.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>2.00</td>
+      <td>€68.38</td>
+      <td>€75.22</td>
+      <td>€64.96</td>
+    </tr>
+    <tr>
+      <td><a href="NCLH_report.html" target="_blank">NCLH</a></td>
+      <td>19-07-2025</td>
+      <td>64.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>0.74</td>
+      <td>€22.07</td>
+      <td>€24.28</td>
+      <td>€20.97</td>
+    </tr>
+    <tr>
+      <td><a href="NVR_report.html" target="_blank">NVR</a></td>
+      <td>19-07-2025</td>
+      <td>48.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>NO TRADE/SELL</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>172.91</td>
+      <td>€6984.21</td>
+      <td>€8381.05</td>
+      <td>€6285.79</td>
+    </tr>
+  </tbody>
+</table></div></div></div></section><section class="container2">  
+                <h1> Linea guida dettagliata per investimenti medio-lungo termine tramite piano di accumulo (PAC)</h1>
+                <p><b>Obiettivo dell'investimento:</b> <ul><li>Investire nel medio-lungo termine (3 mesi - 1 anno);</li>
+                <li>Sfruttare il <b>piano di accumulo (PAC)</b> per ridurre i costi di commissione e acquistare anche frazioni di azioni;</li>
+                <li>Aumentare gradualmente il capitale investito da 100 €/mese a 200-400€/mese, basandosi sulle performance del portafoglio.</li></ul></p>
+                <h2>FASE 1: SELEZIONE DEI TITOLI MIGLIORI"</h2>
+    <ol><li>Filtrare le azioni con criteri fondamentali, tecnici e macroeconomici</li>
+    <li>Identificare i settori migliori per la fase di mercato attuale</li>
+    </ol>
+    <p><b>Risultato:</b> Una lista di titoli con punteggi alti e buone prospettive di crescita nel periodo desiderato.</p>
+    <h2>FASE 2: ANALISI DELLA DURATA DEL TRADE</h2>
+    <p>Utilizzo di dati settimanali per individuare trend consolidati:</p>
+    <ul><li>Medio termine(1-3 mesi): Trend positivo nei dati settimanali, confermato dai giornalieri;</li></ul>
+    <li>Lungo termine(3-12 mesi): Trend settimanale positivo, anche se giornaliero è neutro o leggermente negativo.</li>   
+    <p><b>Risultato:</b> Capire quanto tempo lasciare il capitale investito prima di ribilanciare.</p>
+    <h2>FASE 3: DECISIONE DI INGRESSO (BUY O NO TRADE)</h2>
+    <p><b>Comprare solo se tutte queste condizioni sono rispettate:</b></p>
+    <ul>
+    <li>Segnale BUY solo se il segnale è positivo su almeno 2 orizzonti temporali <i>(meglio se lungo + medio termine)</i>.</li>
+    <li>Il mercato globale non è in recessione profonda.</li>
+    <li>Il settore è in crescita o comunque stabile.</li>    </ul>
+    <p><i><b>NO TRADE</b> se il segnale è negativo su almeno 2 orizzonti temporali e <b>ATTESA</b> se breve termine è negativo ma medio e lungo sono forti (potenziale punto d'ingresso migliore in arrivo).</i></p>
+    <h2>FASE 4: STRATEGIA DI ACCUMULO E GESTIONE RISCHIO</h2>
+    <ul><li>Investire ogni mese una parte fissa del capitale disponibile (es. 100€, poi 200-400€).</li>
+    <li>Aumentare l'investimento nei mesi in cui il mercato offre le migliori opportunità.</li>
+    <li>Se il prezzo di un titolo è alto rispetto alla capacità d'investimento, comprare frazioni di azioni.</li>
+    <p><b>Esempio di PAC dinamico:</b></p>
+    <ul><li>Se il settore è in forte crescita, aumento del capitale investito del 25-50%;</li>
+    <li>Se il settore è stabile ma non in forte trend, investire l'importo normale (es. 200€);</li>
+    <li>Se il mercato è incerto, ridurre l'investimento e accumulare liquidità.</li></ul>
+    
+    <h2>FASE 5: TAKE PROFIT E STOP LOSS DINAMICI</h2>
+    <p><i>Programma ha già convertito e calcolato TP e SL in automatico</i></p>
+    <p>In base alla durata dell'investimento, se trend è ancora positivo a TP raggiunto, si può alzare il target invece di vendere.</p>
+    
+    <h2>FASE 6: MONITORAGGIO E AGGIORNAMENTO DELLA STRATEGIA</h2>
+    <ul><li><b>Analisi settimanale:</b> Controllare l'andamento del portafoglio e aggiornare i segnale.</li>
+    <li><b>Analisi mensile:</b> Ribilanciare il PAC e modifica i livelli di investimento. </li>
+    <li><b>Analisi trimestrale:</b> Verificare i settori più forti e cambiare la strategia se necessario.</li></ul>
+    <h2>Conclusione:</h2>
+    <ul><li>Questa strategia permette di minimizzare il rischio grazie all'accumulo graduale.</li>
+    <li>Il sistema è abbastanza rigido da evitare investimenti sbagliati, ma flessibile per adattarsi alle fasi di mercato.</li>
+    <li>Con un aumento del capitale investito in base alla performance, il portafoglio può crescere in modo sostenibile nel tempo.</li></ul>
+    <p><b>Risultato:</b>Investire solo nei migliori titoli, con un rischio controllato e un'altra probabilità di rendimento positivo nel medio-lungo termine.</p>
+
+                <p><i><b>Disclaimer:</b> L'analisi serve per avere una panoramica generale, ma contengono errori sia tecnici che logici. Quindi per elaborare un piano d'investimento, affidarsi sempre a un professionista del settore (e abilitato.).</i></p>
+            </section>           
+
+            <footer>
+                <p>&copy; 2025 Riepilogo Reports - Tutti i diritti riservati</p>
+            </footer>
+            <script src="auth.js"></script>
+            <script src="controlloUtenteLoggato.js"></script>
+            
+        </body>
+    </head>
+    </html>

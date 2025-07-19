@@ -1,0 +1,5645 @@
+<!DOCTYPE html>
+    <html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device,initial-scale=1.0">
+        <title>Report Finanziario Semplice</title>
+        <link rel="stylesheet" href="CSS/styles.css">        
+        <body><header>
+	<div class="nav-bar">
+		<span class="logo">FinTable</span> 		
+	</div>
+	<nav>
+			<ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="ElencoReport.html">AllReports</a></li>              
+            <li><a href="ElencoReport_PortfolioPersonale.html">MyPortfolio</a></li>
+            <li><a href="ElencoReportDaAnalizzare.html">BestScores</a></li> 
+            <li><a href="ElencoReportAnalizzati.html">BestTrades</a></li>
+            <li><a href="ElencoReportBestTrade.html">BestTradesStrategy</a></li>
+            <li><a href="ElencoReportBUYSELLTrade.html">Tickers in Accumulo/Declino</a></li>
+        </ul>    
+       </nav>		
+	</header>  
+                    
+
+            <section id="home" class="container2">
+                <h2>Riepilogo dei migliori Tickers per il medio/lungo termine (3 mesi +): </h2>
+                <div class="report-section">
+                    <div class="analisi-container">
+                        <div class="analisi-dentro">
+                            
+                            <table border="1" class="dataframe table table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Ticker</th>
+      <th>Data Report</th>
+      <th>Score</th>
+      <th>Settore</th>
+      <th>Durata</th>
+      <th>Segnale su Breve Periodo</th>
+      <th>Segnale su Medio Periodo</th>
+      <th>Segnale su Lungo Periodo</th>
+      <th>Fase Mercato Globale</th>
+      <th>Fase Ticker</th>
+      <th>ATR</th>
+      <th>Entry</th>
+      <th>TP</th>
+      <th>SL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="T_report.html" target="_blank">T</a></td>
+      <td>07-04-2025</td>
+      <td>53.0</td>
+      <td>Communication Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>0.80</td>
+      <td>€24.93</td>
+      <td>€27.42</td>
+      <td>€23.68</td>
+    </tr>
+    <tr>
+      <td><a href="AZO_report.html" target="_blank">AZO</a></td>
+      <td>07-04-2025</td>
+      <td>64.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>95.90</td>
+      <td>€3425.03</td>
+      <td>€4110.03</td>
+      <td>€3082.52</td>
+    </tr>
+    <tr>
+      <td><a href="CBOE_report.html" target="_blank">CBOE</a></td>
+      <td>07-04-2025</td>
+      <td>67.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>6.66</td>
+      <td>€201.17</td>
+      <td>€221.29</td>
+      <td>€191.11</td>
+    </tr>
+    <tr>
+      <td><a href="VRSN_report.html" target="_blank">VRSN</a></td>
+      <td>07-04-2025</td>
+      <td>48.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>6.25</td>
+      <td>€225.23</td>
+      <td>€247.75</td>
+      <td>€213.96</td>
+    </tr>
+    <tr>
+      <td><a href="VRSN_report.html" target="_blank">VRSN</a></td>
+      <td>18-04-2025</td>
+      <td>56.0</td>
+      <td>Technology</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>7.36</td>
+      <td>€230.14</td>
+      <td>€276.17</td>
+      <td>€207.12</td>
+    </tr>
+    <tr>
+      <td><a href="KR_report.html" target="_blank">KR</a></td>
+      <td>26-04-2025</td>
+      <td>69.0</td>
+      <td>Consumer Defensive</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>1.88</td>
+      <td>€66.89</td>
+      <td>€80.27</td>
+      <td>€60.20</td>
+    </tr>
+    <tr>
+      <td><a href="MNST_report.html" target="_blank">MNST</a></td>
+      <td>26-04-2025</td>
+      <td>66.0</td>
+      <td>Consumer Defensive</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>1.37</td>
+      <td>€55.01</td>
+      <td>€66.02</td>
+      <td>€49.51</td>
+    </tr>
+    <tr>
+      <td><a href="CME_report.html" target="_blank">CME</a></td>
+      <td>26-04-2025</td>
+      <td>72.0</td>
+      <td>Financial Services</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>7.16</td>
+      <td>€246.71</td>
+      <td>€296.05</td>
+      <td>€222.03</td>
+    </tr>
+    <tr>
+      <td><a href="CAH_report.html" target="_blank">CAH</a></td>
+      <td>26-04-2025</td>
+      <td>61.0</td>
+      <td>Healthcare</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>3.98</td>
+      <td>€127.16</td>
+      <td>€152.59</td>
+      <td>€114.44</td>
+    </tr>
+    <tr>
+      <td><a href="COR_report.html" target="_blank">COR</a></td>
+      <td>26-04-2025</td>
+      <td>59.0</td>
+      <td>Healthcare</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>7.57</td>
+      <td>€264.68</td>
+      <td>€317.62</td>
+      <td>€238.21</td>
+    </tr>
+    <tr>
+      <td><a href="EXC_report.html" target="_blank">EXC</a></td>
+      <td>26-04-2025</td>
+      <td>76.0</td>
+      <td>Utilities</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>1.23</td>
+      <td>€43.43</td>
+      <td>€52.12</td>
+      <td>€39.09</td>
+    </tr>
+    <tr>
+      <td><a href="CME_report.html" target="_blank">CME</a></td>
+      <td>26-04-2025</td>
+      <td>72.0</td>
+      <td>Financial Services</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>7.16</td>
+      <td>€246.71</td>
+      <td>€296.05</td>
+      <td>€222.03</td>
+    </tr>
+    <tr>
+      <td><a href="VRSN_report.html" target="_blank">VRSN</a></td>
+      <td>26-04-2025</td>
+      <td>74.0</td>
+      <td>Technology</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>6.46</td>
+      <td>€236.89</td>
+      <td>€284.27</td>
+      <td>€213.20</td>
+    </tr>
+    <tr>
+      <td><a href="EXC_report.html" target="_blank">EXC</a></td>
+      <td>26-04-2025</td>
+      <td>76.0</td>
+      <td>Utilities</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>1.23</td>
+      <td>€43.43</td>
+      <td>€52.12</td>
+      <td>€39.09</td>
+    </tr>
+    <tr>
+      <td><a href="CME_report.html" target="_blank">CME</a></td>
+      <td>26-04-2025</td>
+      <td>72.0</td>
+      <td>Financial Services</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>7.16</td>
+      <td>€246.71</td>
+      <td>€296.05</td>
+      <td>€222.03</td>
+    </tr>
+    <tr>
+      <td><a href="EXC_report.html" target="_blank">EXC</a></td>
+      <td>26-04-2025</td>
+      <td>76.0</td>
+      <td>Utilities</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>1.23</td>
+      <td>€43.43</td>
+      <td>€52.12</td>
+      <td>€39.09</td>
+    </tr>
+    <tr>
+      <td><a href="CME_report.html" target="_blank">CME</a></td>
+      <td>26-04-2025</td>
+      <td>72.0</td>
+      <td>Financial Services</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>7.16</td>
+      <td>€246.71</td>
+      <td>€296.05</td>
+      <td>€222.03</td>
+    </tr>
+    <tr>
+      <td><a href="VRSN_report.html" target="_blank">VRSN</a></td>
+      <td>26-04-2025</td>
+      <td>74.0</td>
+      <td>Technology</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>6.46</td>
+      <td>€236.89</td>
+      <td>€284.27</td>
+      <td>€213.20</td>
+    </tr>
+    <tr>
+      <td><a href="EXC_report.html" target="_blank">EXC</a></td>
+      <td>26-04-2025</td>
+      <td>76.0</td>
+      <td>Utilities</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>1.23</td>
+      <td>€43.43</td>
+      <td>€52.12</td>
+      <td>€39.09</td>
+    </tr>
+    <tr>
+      <td><a href="CME_report.html" target="_blank">CME</a></td>
+      <td>26-04-2025</td>
+      <td>72.0</td>
+      <td>Financial Services</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>7.16</td>
+      <td>€246.71</td>
+      <td>€296.05</td>
+      <td>€222.03</td>
+    </tr>
+    <tr>
+      <td><a href="EXC_report.html" target="_blank">EXC</a></td>
+      <td>26-04-2025</td>
+      <td>76.0</td>
+      <td>Utilities</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>1.23</td>
+      <td>€43.43</td>
+      <td>€52.12</td>
+      <td>€39.09</td>
+    </tr>
+    <tr>
+      <td><a href="CME_report.html" target="_blank">CME</a></td>
+      <td>26-04-2025</td>
+      <td>72.0</td>
+      <td>Financial Services</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>7.16</td>
+      <td>€246.71</td>
+      <td>€296.05</td>
+      <td>€222.03</td>
+    </tr>
+    <tr>
+      <td><a href="VRSN_report.html" target="_blank">VRSN</a></td>
+      <td>26-04-2025</td>
+      <td>74.0</td>
+      <td>Technology</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>6.46</td>
+      <td>€236.89</td>
+      <td>€284.27</td>
+      <td>€213.20</td>
+    </tr>
+    <tr>
+      <td><a href="EXC_report.html" target="_blank">EXC</a></td>
+      <td>26-04-2025</td>
+      <td>76.0</td>
+      <td>Utilities</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>1.23</td>
+      <td>€43.43</td>
+      <td>€52.12</td>
+      <td>€39.09</td>
+    </tr>
+    <tr>
+      <td><a href="CME_report.html" target="_blank">CME</a></td>
+      <td>26-04-2025</td>
+      <td>72.0</td>
+      <td>Financial Services</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>7.16</td>
+      <td>€246.71</td>
+      <td>€296.05</td>
+      <td>€222.03</td>
+    </tr>
+    <tr>
+      <td><a href="EXC_report.html" target="_blank">EXC</a></td>
+      <td>26-04-2025</td>
+      <td>76.0</td>
+      <td>Utilities</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>1.23</td>
+      <td>€43.43</td>
+      <td>€52.12</td>
+      <td>€39.09</td>
+    </tr>
+    <tr>
+      <td><a href="CME_report.html" target="_blank">CME</a></td>
+      <td>26-04-2025</td>
+      <td>72.0</td>
+      <td>Financial Services</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>7.16</td>
+      <td>€246.71</td>
+      <td>€296.05</td>
+      <td>€222.03</td>
+    </tr>
+    <tr>
+      <td><a href="VRSN_report.html" target="_blank">VRSN</a></td>
+      <td>26-04-2025</td>
+      <td>74.0</td>
+      <td>Technology</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>6.46</td>
+      <td>€236.89</td>
+      <td>€284.27</td>
+      <td>€213.20</td>
+    </tr>
+    <tr>
+      <td><a href="KR_report.html" target="_blank">KR</a></td>
+      <td>04-05-2025</td>
+      <td>74.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.72</td>
+      <td>€67.75</td>
+      <td>€74.53</td>
+      <td>€64.37</td>
+    </tr>
+    <tr>
+      <td><a href="EXC_report.html" target="_blank">EXC</a></td>
+      <td>04-05-2025</td>
+      <td>62.0</td>
+      <td>Utilities</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>0.99</td>
+      <td>€43.80</td>
+      <td>€48.17</td>
+      <td>€41.61</td>
+    </tr>
+    <tr>
+      <td><a href="PLTR_report.html" target="_blank">PLTR</a></td>
+      <td>04-05-2025</td>
+      <td>86.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.58</td>
+      <td>€107.26</td>
+      <td>€117.99</td>
+      <td>€101.90</td>
+    </tr>
+    <tr>
+      <td><a href="EXC_report.html" target="_blank">EXC</a></td>
+      <td>04-05-2025</td>
+      <td>62.0</td>
+      <td>Utilities</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>0.99</td>
+      <td>€43.80</td>
+      <td>€48.17</td>
+      <td>€41.61</td>
+    </tr>
+    <tr>
+      <td><a href="CNP_report.html" target="_blank">CNP</a></td>
+      <td>10-05-2025</td>
+      <td>60.0</td>
+      <td>Utilities</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>0.73</td>
+      <td>€35.70</td>
+      <td>€42.84</td>
+      <td>€32.13</td>
+    </tr>
+    <tr>
+      <td><a href="GE_report.html" target="_blank">GE</a></td>
+      <td>10-05-2025</td>
+      <td>66.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.22</td>
+      <td>€201.29</td>
+      <td>€221.41</td>
+      <td>€191.22</td>
+    </tr>
+    <tr>
+      <td><a href="HWM_report.html" target="_blank">HWM</a></td>
+      <td>10-05-2025</td>
+      <td>84.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.90</td>
+      <td>€147.30</td>
+      <td>€162.03</td>
+      <td>€139.93</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>10-05-2025</td>
+      <td>67.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.54</td>
+      <td>€161.72</td>
+      <td>€177.89</td>
+      <td>€153.63</td>
+    </tr>
+    <tr>
+      <td><a href="CPRT_report.html" target="_blank">CPRT</a></td>
+      <td>12-05-2025</td>
+      <td>65.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.27</td>
+      <td>€58.08</td>
+      <td>€63.89</td>
+      <td>€55.18</td>
+    </tr>
+    <tr>
+      <td><a href="GE_report.html" target="_blank">GE</a></td>
+      <td>12-05-2025</td>
+      <td>66.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.22</td>
+      <td>€201.29</td>
+      <td>€221.41</td>
+      <td>€191.22</td>
+    </tr>
+    <tr>
+      <td><a href="HWM_report.html" target="_blank">HWM</a></td>
+      <td>12-05-2025</td>
+      <td>84.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.90</td>
+      <td>€147.30</td>
+      <td>€162.03</td>
+      <td>€139.93</td>
+    </tr>
+    <tr>
+      <td><a href="JCI_report.html" target="_blank">JCI</a></td>
+      <td>12-05-2025</td>
+      <td>77.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>2.62</td>
+      <td>€85.43</td>
+      <td>€93.98</td>
+      <td>€81.16</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>12-05-2025</td>
+      <td>75.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.39</td>
+      <td>€234.77</td>
+      <td>€258.25</td>
+      <td>€223.03</td>
+    </tr>
+    <tr>
+      <td><a href="ROL_report.html" target="_blank">ROL</a></td>
+      <td>12-05-2025</td>
+      <td>61.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.17</td>
+      <td>€53.30</td>
+      <td>€63.95</td>
+      <td>€47.97</td>
+    </tr>
+    <tr>
+      <td><a href="WM_report.html" target="_blank">WM</a></td>
+      <td>12-05-2025</td>
+      <td>69.0</td>
+      <td>Industrials</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.55</td>
+      <td>€219.32</td>
+      <td>€263.18</td>
+      <td>€197.39</td>
+    </tr>
+    <tr>
+      <td><a href="CRWD_report.html" target="_blank">CRWD</a></td>
+      <td>12-05-2025</td>
+      <td>61.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>17.08</td>
+      <td>€399.09</td>
+      <td>€438.99</td>
+      <td>€379.13</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>12-05-2025</td>
+      <td>67.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.54</td>
+      <td>€161.72</td>
+      <td>€177.89</td>
+      <td>€153.63</td>
+    </tr>
+    <tr>
+      <td><a href="CME_report.html" target="_blank">CME</a></td>
+      <td>12-05-2025</td>
+      <td>91.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.29</td>
+      <td>€265.37</td>
+      <td>€291.91</td>
+      <td>€252.10</td>
+    </tr>
+    <tr>
+      <td><a href="SCHW_report.html" target="_blank">SCHW</a></td>
+      <td>12-05-2025</td>
+      <td>67.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.92</td>
+      <td>€79.24</td>
+      <td>€87.16</td>
+      <td>€75.28</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>12-05-2025</td>
+      <td>75.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.39</td>
+      <td>€234.77</td>
+      <td>€258.25</td>
+      <td>€223.03</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>12-05-2025</td>
+      <td>67.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.54</td>
+      <td>€161.72</td>
+      <td>€177.89</td>
+      <td>€153.63</td>
+    </tr>
+    <tr>
+      <td><a href="CME_report.html" target="_blank">CME</a></td>
+      <td>12-05-2025</td>
+      <td>91.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.29</td>
+      <td>€265.37</td>
+      <td>€291.91</td>
+      <td>€252.10</td>
+    </tr>
+    <tr>
+      <td><a href="SCHW_report.html" target="_blank">SCHW</a></td>
+      <td>12-05-2025</td>
+      <td>67.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.92</td>
+      <td>€79.24</td>
+      <td>€87.16</td>
+      <td>€75.28</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>12-05-2025</td>
+      <td>75.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.39</td>
+      <td>€234.77</td>
+      <td>€258.25</td>
+      <td>€223.03</td>
+    </tr>
+    <tr>
+      <td><a href="CRWD_report.html" target="_blank">CRWD</a></td>
+      <td>12-05-2025</td>
+      <td>61.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>17.08</td>
+      <td>€399.09</td>
+      <td>€438.99</td>
+      <td>€379.13</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>12-05-2025</td>
+      <td>67.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.54</td>
+      <td>€161.72</td>
+      <td>€177.89</td>
+      <td>€153.63</td>
+    </tr>
+    <tr>
+      <td><a href="CME_report.html" target="_blank">CME</a></td>
+      <td>12-05-2025</td>
+      <td>91.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.29</td>
+      <td>€265.37</td>
+      <td>€291.91</td>
+      <td>€252.10</td>
+    </tr>
+    <tr>
+      <td><a href="SCHW_report.html" target="_blank">SCHW</a></td>
+      <td>12-05-2025</td>
+      <td>67.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.92</td>
+      <td>€79.24</td>
+      <td>€87.16</td>
+      <td>€75.28</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>12-05-2025</td>
+      <td>75.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.39</td>
+      <td>€234.77</td>
+      <td>€258.25</td>
+      <td>€223.03</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>12-05-2025</td>
+      <td>67.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.54</td>
+      <td>€161.72</td>
+      <td>€177.89</td>
+      <td>€153.63</td>
+    </tr>
+    <tr>
+      <td><a href="CME_report.html" target="_blank">CME</a></td>
+      <td>12-05-2025</td>
+      <td>91.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.29</td>
+      <td>€265.37</td>
+      <td>€291.91</td>
+      <td>€252.10</td>
+    </tr>
+    <tr>
+      <td><a href="SCHW_report.html" target="_blank">SCHW</a></td>
+      <td>12-05-2025</td>
+      <td>67.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.92</td>
+      <td>€79.24</td>
+      <td>€87.16</td>
+      <td>€75.28</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>12-05-2025</td>
+      <td>75.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.39</td>
+      <td>€234.77</td>
+      <td>€258.25</td>
+      <td>€223.03</td>
+    </tr>
+    <tr>
+      <td><a href="CRWD_report.html" target="_blank">CRWD</a></td>
+      <td>12-05-2025</td>
+      <td>61.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>17.08</td>
+      <td>€399.09</td>
+      <td>€438.99</td>
+      <td>€379.13</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>12-05-2025</td>
+      <td>75.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.39</td>
+      <td>€234.77</td>
+      <td>€258.25</td>
+      <td>€223.03</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>12-05-2025</td>
+      <td>67.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.54</td>
+      <td>€161.72</td>
+      <td>€177.89</td>
+      <td>€153.63</td>
+    </tr>
+    <tr>
+      <td><a href="CME_report.html" target="_blank">CME</a></td>
+      <td>12-05-2025</td>
+      <td>91.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.29</td>
+      <td>€265.37</td>
+      <td>€291.91</td>
+      <td>€252.10</td>
+    </tr>
+    <tr>
+      <td><a href="SCHW_report.html" target="_blank">SCHW</a></td>
+      <td>12-05-2025</td>
+      <td>67.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.92</td>
+      <td>€79.24</td>
+      <td>€87.16</td>
+      <td>€75.28</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>12-05-2025</td>
+      <td>75.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.39</td>
+      <td>€234.77</td>
+      <td>€258.25</td>
+      <td>€223.03</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>12-05-2025</td>
+      <td>67.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.54</td>
+      <td>€161.72</td>
+      <td>€177.89</td>
+      <td>€153.63</td>
+    </tr>
+    <tr>
+      <td><a href="CME_report.html" target="_blank">CME</a></td>
+      <td>12-05-2025</td>
+      <td>91.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.29</td>
+      <td>€265.37</td>
+      <td>€291.91</td>
+      <td>€252.10</td>
+    </tr>
+    <tr>
+      <td><a href="SCHW_report.html" target="_blank">SCHW</a></td>
+      <td>12-05-2025</td>
+      <td>67.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.92</td>
+      <td>€79.24</td>
+      <td>€87.16</td>
+      <td>€75.28</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>12-05-2025</td>
+      <td>75.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.39</td>
+      <td>€234.77</td>
+      <td>€258.25</td>
+      <td>€223.03</td>
+    </tr>
+    <tr>
+      <td><a href="CRWD_report.html" target="_blank">CRWD</a></td>
+      <td>12-05-2025</td>
+      <td>61.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>17.08</td>
+      <td>€399.09</td>
+      <td>€438.99</td>
+      <td>€379.13</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>12-05-2025</td>
+      <td>67.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.54</td>
+      <td>€161.72</td>
+      <td>€177.89</td>
+      <td>€153.63</td>
+    </tr>
+    <tr>
+      <td><a href="CME_report.html" target="_blank">CME</a></td>
+      <td>12-05-2025</td>
+      <td>91.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.29</td>
+      <td>€265.37</td>
+      <td>€291.91</td>
+      <td>€252.10</td>
+    </tr>
+    <tr>
+      <td><a href="SCHW_report.html" target="_blank">SCHW</a></td>
+      <td>12-05-2025</td>
+      <td>67.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.92</td>
+      <td>€79.24</td>
+      <td>€87.16</td>
+      <td>€75.28</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>12-05-2025</td>
+      <td>75.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.39</td>
+      <td>€234.77</td>
+      <td>€258.25</td>
+      <td>€223.03</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>12-05-2025</td>
+      <td>67.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.54</td>
+      <td>€161.72</td>
+      <td>€177.89</td>
+      <td>€153.63</td>
+    </tr>
+    <tr>
+      <td><a href="CME_report.html" target="_blank">CME</a></td>
+      <td>12-05-2025</td>
+      <td>91.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.29</td>
+      <td>€265.37</td>
+      <td>€291.91</td>
+      <td>€252.10</td>
+    </tr>
+    <tr>
+      <td><a href="SCHW_report.html" target="_blank">SCHW</a></td>
+      <td>12-05-2025</td>
+      <td>67.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.92</td>
+      <td>€79.24</td>
+      <td>€87.16</td>
+      <td>€75.28</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>12-05-2025</td>
+      <td>75.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.39</td>
+      <td>€234.77</td>
+      <td>€258.25</td>
+      <td>€223.03</td>
+    </tr>
+    <tr>
+      <td><a href="CRWD_report.html" target="_blank">CRWD</a></td>
+      <td>12-05-2025</td>
+      <td>61.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>17.08</td>
+      <td>€399.09</td>
+      <td>€438.99</td>
+      <td>€379.13</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>12-05-2025</td>
+      <td>75.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.39</td>
+      <td>€234.77</td>
+      <td>€258.25</td>
+      <td>€223.03</td>
+    </tr>
+    <tr>
+      <td><a href="CNP_report.html" target="_blank">CNP</a></td>
+      <td>12-05-2025</td>
+      <td>60.0</td>
+      <td>Utilities</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>0.73</td>
+      <td>€35.70</td>
+      <td>€42.84</td>
+      <td>€32.13</td>
+    </tr>
+    <tr>
+      <td><a href="HWM_report.html" target="_blank">HWM</a></td>
+      <td>12-05-2025</td>
+      <td>84.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.90</td>
+      <td>€147.30</td>
+      <td>€162.03</td>
+      <td>€139.93</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>12-05-2025</td>
+      <td>67.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.54</td>
+      <td>€161.72</td>
+      <td>€177.89</td>
+      <td>€153.63</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>12-05-2025</td>
+      <td>67.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.54</td>
+      <td>€161.72</td>
+      <td>€177.89</td>
+      <td>€153.63</td>
+    </tr>
+    <tr>
+      <td><a href="CME_report.html" target="_blank">CME</a></td>
+      <td>12-05-2025</td>
+      <td>91.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.29</td>
+      <td>€265.37</td>
+      <td>€291.91</td>
+      <td>€252.10</td>
+    </tr>
+    <tr>
+      <td><a href="SCHW_report.html" target="_blank">SCHW</a></td>
+      <td>12-05-2025</td>
+      <td>67.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.92</td>
+      <td>€79.24</td>
+      <td>€87.16</td>
+      <td>€75.28</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>12-05-2025</td>
+      <td>75.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.39</td>
+      <td>€234.77</td>
+      <td>€258.25</td>
+      <td>€223.03</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>12-05-2025</td>
+      <td>67.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.54</td>
+      <td>€161.72</td>
+      <td>€177.89</td>
+      <td>€153.63</td>
+    </tr>
+    <tr>
+      <td><a href="HWM_report.html" target="_blank">HWM</a></td>
+      <td>12-05-2025</td>
+      <td>84.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.90</td>
+      <td>€147.30</td>
+      <td>€162.03</td>
+      <td>€139.93</td>
+    </tr>
+    <tr>
+      <td><a href="HWM_report.html" target="_blank">HWM</a></td>
+      <td>12-05-2025</td>
+      <td>84.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.90</td>
+      <td>€147.30</td>
+      <td>€162.03</td>
+      <td>€139.93</td>
+    </tr>
+    <tr>
+      <td><a href="JCI_report.html" target="_blank">JCI</a></td>
+      <td>12-05-2025</td>
+      <td>77.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>2.62</td>
+      <td>€85.43</td>
+      <td>€93.98</td>
+      <td>€81.16</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>12-05-2025</td>
+      <td>75.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.39</td>
+      <td>€234.77</td>
+      <td>€258.25</td>
+      <td>€223.03</td>
+    </tr>
+    <tr>
+      <td><a href="GE_report.html" target="_blank">GE</a></td>
+      <td>17-05-2025</td>
+      <td>88.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.28</td>
+      <td>€215.40</td>
+      <td>€236.94</td>
+      <td>€204.63</td>
+    </tr>
+    <tr>
+      <td><a href="AM_report.html" target="_blank">AM</a></td>
+      <td>17-05-2025</td>
+      <td>71.0</td>
+      <td>Energy</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>0.42</td>
+      <td>€17.71</td>
+      <td>€19.48</td>
+      <td>€16.82</td>
+    </tr>
+    <tr>
+      <td><a href="UBER_report.html" target="_blank">UBER</a></td>
+      <td>17-05-2025</td>
+      <td>73.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.31</td>
+      <td>€84.08</td>
+      <td>€92.48</td>
+      <td>€79.87</td>
+    </tr>
+    <tr>
+      <td><a href="GE_report.html" target="_blank">GE</a></td>
+      <td>17-05-2025</td>
+      <td>88.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.28</td>
+      <td>€215.40</td>
+      <td>€236.94</td>
+      <td>€204.63</td>
+    </tr>
+    <tr>
+      <td><a href="HWM_report.html" target="_blank">HWM</a></td>
+      <td>17-05-2025</td>
+      <td>76.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.40</td>
+      <td>€151.14</td>
+      <td>€166.25</td>
+      <td>€143.58</td>
+    </tr>
+    <tr>
+      <td><a href="COF_report.html" target="_blank">COF</a></td>
+      <td>17-05-2025</td>
+      <td>64.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.44</td>
+      <td>€184.57</td>
+      <td>€203.02</td>
+      <td>€175.34</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>17-05-2025</td>
+      <td>56.0</td>
+      <td>Consumer Defensive</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>3.79</td>
+      <td>€158.89</td>
+      <td>€190.66</td>
+      <td>€143.00</td>
+    </tr>
+    <tr>
+      <td><a href="COF_report.html" target="_blank">COF</a></td>
+      <td>17-05-2025</td>
+      <td>64.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.44</td>
+      <td>€184.57</td>
+      <td>€203.02</td>
+      <td>€175.34</td>
+    </tr>
+    <tr>
+      <td><a href="RL_report.html" target="_blank">RL</a></td>
+      <td>17-05-2025</td>
+      <td>83.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>8.83</td>
+      <td>€251.45</td>
+      <td>€276.59</td>
+      <td>€238.87</td>
+    </tr>
+    <tr>
+      <td><a href="TJX_report.html" target="_blank">TJX</a></td>
+      <td>17-05-2025</td>
+      <td>80.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>2.22</td>
+      <td>€125.33</td>
+      <td>€137.87</td>
+      <td>€119.07</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>17-05-2025</td>
+      <td>56.0</td>
+      <td>Consumer Defensive</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>3.79</td>
+      <td>€158.89</td>
+      <td>€190.66</td>
+      <td>€143.00</td>
+    </tr>
+    <tr>
+      <td><a href="DFS_report.html" target="_blank">DFS</a></td>
+      <td>17-05-2025</td>
+      <td>72.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.60</td>
+      <td>€187.32</td>
+      <td>€206.05</td>
+      <td>€177.95</td>
+    </tr>
+    <tr>
+      <td><a href="SCHW_report.html" target="_blank">SCHW</a></td>
+      <td>17-05-2025</td>
+      <td>86.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.82</td>
+      <td>€82.84</td>
+      <td>€91.12</td>
+      <td>€78.70</td>
+    </tr>
+    <tr>
+      <td><a href="JPM_report.html" target="_blank">JPM</a></td>
+      <td>17-05-2025</td>
+      <td>72.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.64</td>
+      <td>€251.44</td>
+      <td>€276.58</td>
+      <td>€238.86</td>
+    </tr>
+    <tr>
+      <td><a href="MA_report.html" target="_blank">MA</a></td>
+      <td>17-05-2025</td>
+      <td>67.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>10.22</td>
+      <td>€548.24</td>
+      <td>€603.06</td>
+      <td>€520.82</td>
+    </tr>
+    <tr>
+      <td><a href="COR_report.html" target="_blank">COR</a></td>
+      <td>17-05-2025</td>
+      <td>44.0</td>
+      <td>Healthcare</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>7.88</td>
+      <td>€267.93</td>
+      <td>€294.72</td>
+      <td>€254.53</td>
+    </tr>
+    <tr>
+      <td><a href="JCI_report.html" target="_blank">JCI</a></td>
+      <td>17-05-2025</td>
+      <td>69.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>2.14</td>
+      <td>€90.93</td>
+      <td>€100.03</td>
+      <td>€86.39</td>
+    </tr>
+    <tr>
+      <td><a href="PAYX_report.html" target="_blank">PAYX</a></td>
+      <td>17-05-2025</td>
+      <td>57.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>2.70</td>
+      <td>€145.43</td>
+      <td>€159.97</td>
+      <td>€138.15</td>
+    </tr>
+    <tr>
+      <td><a href="PAYC_report.html" target="_blank">PAYC</a></td>
+      <td>17-05-2025</td>
+      <td>89.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.47</td>
+      <td>€240.09</td>
+      <td>€264.10</td>
+      <td>€228.09</td>
+    </tr>
+    <tr>
+      <td><a href="JBL_report.html" target="_blank">JBL</a></td>
+      <td>17-05-2025</td>
+      <td>72.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.97</td>
+      <td>€155.85</td>
+      <td>€171.43</td>
+      <td>€148.06</td>
+    </tr>
+    <tr>
+      <td><a href="PLTR_report.html" target="_blank">PLTR</a></td>
+      <td>17-05-2025</td>
+      <td>81.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.19</td>
+      <td>€118.29</td>
+      <td>€130.12</td>
+      <td>€112.38</td>
+    </tr>
+    <tr>
+      <td><a href="JBL_report.html" target="_blank">JBL</a></td>
+      <td>17-05-2025</td>
+      <td>72.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.97</td>
+      <td>€155.85</td>
+      <td>€171.43</td>
+      <td>€148.06</td>
+    </tr>
+    <tr>
+      <td><a href="VRSN_report.html" target="_blank">VRSN</a></td>
+      <td>17-05-2025</td>
+      <td>61.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.93</td>
+      <td>€264.75</td>
+      <td>€291.22</td>
+      <td>€251.51</td>
+    </tr>
+    <tr>
+      <td><a href="ATO_report.html" target="_blank">ATO</a></td>
+      <td>17-05-2025</td>
+      <td>48.0</td>
+      <td>Utilities</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>3.59</td>
+      <td>€146.46</td>
+      <td>€175.75</td>
+      <td>€131.82</td>
+    </tr>
+    <tr>
+      <td><a href="CEG_report.html" target="_blank">CEG</a></td>
+      <td>17-05-2025</td>
+      <td>69.0</td>
+      <td>Utilities</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>12.46</td>
+      <td>€264.26</td>
+      <td>€290.69</td>
+      <td>€251.05</td>
+    </tr>
+    <tr>
+      <td><a href="RL_report.html" target="_blank">RL</a></td>
+      <td>29-05-2025</td>
+      <td>67.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>10.14</td>
+      <td>€267.09</td>
+      <td>€293.80</td>
+      <td>€253.74</td>
+    </tr>
+    <tr>
+      <td><a href="MNST_report.html" target="_blank">MNST</a></td>
+      <td>29-05-2025</td>
+      <td>79.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.03</td>
+      <td>€60.53</td>
+      <td>€66.59</td>
+      <td>€57.51</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>29-05-2025</td>
+      <td>67.0</td>
+      <td>Consumer Defensive</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.01</td>
+      <td>€168.83</td>
+      <td>€202.60</td>
+      <td>€151.95</td>
+    </tr>
+    <tr>
+      <td><a href="DFS_report.html" target="_blank">DFS</a></td>
+      <td>29-05-2025</td>
+      <td>78.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.60</td>
+      <td>€187.32</td>
+      <td>€206.05</td>
+      <td>€177.95</td>
+    </tr>
+    <tr>
+      <td><a href="GS_report.html" target="_blank">GS</a></td>
+      <td>29-05-2025</td>
+      <td>67.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>15.61</td>
+      <td>€577.53</td>
+      <td>€635.29</td>
+      <td>€548.66</td>
+    </tr>
+    <tr>
+      <td><a href="SCHW_report.html" target="_blank">SCHW</a></td>
+      <td>29-05-2025</td>
+      <td>59.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.52</td>
+      <td>€83.48</td>
+      <td>€91.82</td>
+      <td>€79.30</td>
+    </tr>
+    <tr>
+      <td><a href="JPM_report.html" target="_blank">JPM</a></td>
+      <td>29-05-2025</td>
+      <td>67.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.10</td>
+      <td>€249.60</td>
+      <td>€274.56</td>
+      <td>€237.12</td>
+    </tr>
+    <tr>
+      <td><a href="L_report.html" target="_blank">L</a></td>
+      <td>29-05-2025</td>
+      <td>52.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.36</td>
+      <td>€83.97</td>
+      <td>€92.37</td>
+      <td>€79.77</td>
+    </tr>
+    <tr>
+      <td><a href="MA_report.html" target="_blank">MA</a></td>
+      <td>29-05-2025</td>
+      <td>56.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>9.40</td>
+      <td>€541.36</td>
+      <td>€595.49</td>
+      <td>€514.29</td>
+    </tr>
+    <tr>
+      <td><a href="NDAQ_report.html" target="_blank">NDAQ</a></td>
+      <td>29-05-2025</td>
+      <td>64.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.47</td>
+      <td>€78.21</td>
+      <td>€86.03</td>
+      <td>€74.30</td>
+    </tr>
+    <tr>
+      <td><a href="NTRS_report.html" target="_blank">NTRS</a></td>
+      <td>29-05-2025</td>
+      <td>67.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>2.40</td>
+      <td>€102.36</td>
+      <td>€112.60</td>
+      <td>€97.24</td>
+    </tr>
+    <tr>
+      <td><a href="BSX_report.html" target="_blank">BSX</a></td>
+      <td>29-05-2025</td>
+      <td>58.0</td>
+      <td>Healthcare</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.80</td>
+      <td>€100.01</td>
+      <td>€120.01</td>
+      <td>€90.01</td>
+    </tr>
+    <tr>
+      <td><a href="CAH_report.html" target="_blank">CAH</a></td>
+      <td>29-05-2025</td>
+      <td>58.0</td>
+      <td>Healthcare</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>2.80</td>
+      <td>€145.62</td>
+      <td>€174.74</td>
+      <td>€131.05</td>
+    </tr>
+    <tr>
+      <td><a href="JCI_report.html" target="_blank">JCI</a></td>
+      <td>29-05-2025</td>
+      <td>69.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>2.07</td>
+      <td>€94.98</td>
+      <td>€104.48</td>
+      <td>€90.23</td>
+    </tr>
+    <tr>
+      <td><a href="PAYX_report.html" target="_blank">PAYX</a></td>
+      <td>29-05-2025</td>
+      <td>68.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>2.51</td>
+      <td>€149.83</td>
+      <td>€164.82</td>
+      <td>€142.34</td>
+    </tr>
+    <tr>
+      <td><a href="PAYC_report.html" target="_blank">PAYC</a></td>
+      <td>29-05-2025</td>
+      <td>73.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.64</td>
+      <td>€245.04</td>
+      <td>€269.55</td>
+      <td>€232.79</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>29-05-2025</td>
+      <td>68.0</td>
+      <td>Industrials</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.10</td>
+      <td>€240.22</td>
+      <td>€288.26</td>
+      <td>€216.20</td>
+    </tr>
+    <tr>
+      <td><a href="IBM_report.html" target="_blank">IBM</a></td>
+      <td>29-05-2025</td>
+      <td>63.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.30</td>
+      <td>€247.55</td>
+      <td>€272.31</td>
+      <td>€235.17</td>
+    </tr>
+    <tr>
+      <td><a href="KLAC_report.html" target="_blank">KLAC</a></td>
+      <td>29-05-2025</td>
+      <td>73.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>24.69</td>
+      <td>€737.88</td>
+      <td>€811.67</td>
+      <td>€700.99</td>
+    </tr>
+    <tr>
+      <td><a href="LRCX_report.html" target="_blank">LRCX</a></td>
+      <td>29-05-2025</td>
+      <td>53.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>2.50</td>
+      <td>€78.56</td>
+      <td>€86.41</td>
+      <td>€74.63</td>
+    </tr>
+    <tr>
+      <td><a href="PLTR_report.html" target="_blank">PLTR</a></td>
+      <td>29-05-2025</td>
+      <td>71.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.19</td>
+      <td>€114.28</td>
+      <td>€125.71</td>
+      <td>€108.57</td>
+    </tr>
+    <tr>
+      <td><a href="LYV_report.html" target="_blank">LYV</a></td>
+      <td>30-05-2025</td>
+      <td>45.0</td>
+      <td>Communication Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.62</td>
+      <td>€131.49</td>
+      <td>€144.64</td>
+      <td>€124.92</td>
+    </tr>
+    <tr>
+      <td><a href="NFLX_report.html" target="_blank">NFLX</a></td>
+      <td>30-05-2025</td>
+      <td>73.0</td>
+      <td>Communication Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>21.94</td>
+      <td>€1137.70</td>
+      <td>€1251.47</td>
+      <td>€1080.82</td>
+    </tr>
+    <tr>
+      <td><a href="AZO_report.html" target="_blank">AZO</a></td>
+      <td>30-05-2025</td>
+      <td>56.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>90.63</td>
+      <td>€3514.14</td>
+      <td>€4216.97</td>
+      <td>€3162.73</td>
+    </tr>
+    <tr>
+      <td><a href="BKNG_report.html" target="_blank">BKNG</a></td>
+      <td>30-05-2025</td>
+      <td>71.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>101.30</td>
+      <td>€5153.38</td>
+      <td>€6184.06</td>
+      <td>€4638.04</td>
+    </tr>
+    <tr>
+      <td><a href="DRI_report.html" target="_blank">DRI</a></td>
+      <td>30-05-2025</td>
+      <td>60.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.21</td>
+      <td>€201.07</td>
+      <td>€221.17</td>
+      <td>€191.01</td>
+    </tr>
+    <tr>
+      <td><a href="EBAY_report.html" target="_blank">EBAY</a></td>
+      <td>30-05-2025</td>
+      <td>64.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.49</td>
+      <td>€68.07</td>
+      <td>€74.87</td>
+      <td>€64.66</td>
+    </tr>
+    <tr>
+      <td><a href="DG_report.html" target="_blank">DG</a></td>
+      <td>30-05-2025</td>
+      <td>64.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>2.73</td>
+      <td>€91.58</td>
+      <td>€100.74</td>
+      <td>€87.00</td>
+    </tr>
+    <tr>
+      <td><a href="DLTR_report.html" target="_blank">DLTR</a></td>
+      <td>30-05-2025</td>
+      <td>53.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Accumulo</td>
+      <td>2.47</td>
+      <td>€83.70</td>
+      <td>€92.06</td>
+      <td>€79.51</td>
+    </tr>
+    <tr>
+      <td><a href="FAST_report.html" target="_blank">FAST</a></td>
+      <td>30-05-2025</td>
+      <td>55.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>0.81</td>
+      <td>€39.01</td>
+      <td>€42.91</td>
+      <td>€37.06</td>
+    </tr>
+    <tr>
+      <td><a href="GE_report.html" target="_blank">GE</a></td>
+      <td>30-05-2025</td>
+      <td>75.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.41</td>
+      <td>€228.91</td>
+      <td>€251.80</td>
+      <td>€217.47</td>
+    </tr>
+    <tr>
+      <td><a href="HWM_report.html" target="_blank">HWM</a></td>
+      <td>30-05-2025</td>
+      <td>78.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.96</td>
+      <td>€159.92</td>
+      <td>€175.92</td>
+      <td>€151.93</td>
+    </tr>
+    <tr>
+      <td><a href="CSCO_report.html" target="_blank">CSCO</a></td>
+      <td>30-05-2025</td>
+      <td>66.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.11</td>
+      <td>€59.65</td>
+      <td>€65.62</td>
+      <td>€56.67</td>
+    </tr>
+    <tr>
+      <td><a href="CRWD_report.html" target="_blank">CRWD</a></td>
+      <td>30-05-2025</td>
+      <td>75.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>15.70</td>
+      <td>€437.93</td>
+      <td>€481.72</td>
+      <td>€416.03</td>
+    </tr>
+    <tr>
+      <td><a href="MOS_report.html" target="_blank">MOS</a></td>
+      <td>30-05-2025</td>
+      <td>53.0</td>
+      <td>Basic Materials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>0.83</td>
+      <td>€33.84</td>
+      <td>€37.22</td>
+      <td>€32.15</td>
+    </tr>
+    <tr>
+      <td><a href="NRG_report.html" target="_blank">NRG</a></td>
+      <td>30-05-2025</td>
+      <td>56.0</td>
+      <td>Utilities</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.06</td>
+      <td>€145.85</td>
+      <td>€160.44</td>
+      <td>€138.56</td>
+    </tr>
+    <tr>
+      <td><a href="APH_report.html" target="_blank">APH</a></td>
+      <td>30-05-2025</td>
+      <td>68.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.86</td>
+      <td>€82.84</td>
+      <td>€91.12</td>
+      <td>€78.70</td>
+    </tr>
+    <tr>
+      <td><a href="MELI_report.html" target="_blank">MELI</a></td>
+      <td>30-05-2025</td>
+      <td>58.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>69.50</td>
+      <td>€2390.16</td>
+      <td>€2868.19</td>
+      <td>€2151.15</td>
+    </tr>
+    <tr>
+      <td><a href="ZS_report.html" target="_blank">ZS</a></td>
+      <td>30-05-2025</td>
+      <td>54.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.05</td>
+      <td>€238.10</td>
+      <td>€261.91</td>
+      <td>€226.19</td>
+    </tr>
+    <tr>
+      <td><a href="AM_report.html" target="_blank">AM</a></td>
+      <td>30-05-2025</td>
+      <td>62.0</td>
+      <td>Energy</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>0.33</td>
+      <td>€17.76</td>
+      <td>€19.53</td>
+      <td>€16.87</td>
+    </tr>
+    <tr>
+      <td><a href="UBER_report.html" target="_blank">UBER</a></td>
+      <td>30-05-2025</td>
+      <td>65.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>2.57</td>
+      <td>€82.62</td>
+      <td>€90.88</td>
+      <td>€78.49</td>
+    </tr>
+    <tr>
+      <td><a href="GE_report.html" target="_blank">GE</a></td>
+      <td>30-05-2025</td>
+      <td>75.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.41</td>
+      <td>€228.91</td>
+      <td>€251.80</td>
+      <td>€217.47</td>
+    </tr>
+    <tr>
+      <td><a href="HWM_report.html" target="_blank">HWM</a></td>
+      <td>30-05-2025</td>
+      <td>78.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.96</td>
+      <td>€159.92</td>
+      <td>€175.92</td>
+      <td>€151.93</td>
+    </tr>
+    <tr>
+      <td><a href="MELI_report.html" target="_blank">MELI</a></td>
+      <td>30-05-2025</td>
+      <td>58.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>69.50</td>
+      <td>€2390.16</td>
+      <td>€2868.19</td>
+      <td>€2151.15</td>
+    </tr>
+    <tr>
+      <td><a href="ZS_report.html" target="_blank">ZS</a></td>
+      <td>30-05-2025</td>
+      <td>54.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.05</td>
+      <td>€238.10</td>
+      <td>€261.91</td>
+      <td>€226.19</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>30-05-2025</td>
+      <td>73.0</td>
+      <td>Consumer Defensive</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>2.82</td>
+      <td>€168.51</td>
+      <td>€202.21</td>
+      <td>€151.66</td>
+    </tr>
+    <tr>
+      <td><a href="ADP_report.html" target="_blank">ADP</a></td>
+      <td>01-06-2025</td>
+      <td>63.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.42</td>
+      <td>€305.81</td>
+      <td>€336.40</td>
+      <td>€290.52</td>
+    </tr>
+    <tr>
+      <td><a href="AXON_report.html" target="_blank">AXON</a></td>
+      <td>01-06-2025</td>
+      <td>68.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>19.84</td>
+      <td>€684.35</td>
+      <td>€752.79</td>
+      <td>€650.13</td>
+    </tr>
+    <tr>
+      <td><a href="BA_report.html" target="_blank">BA</a></td>
+      <td>01-06-2025</td>
+      <td>56.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.10</td>
+      <td>€195.35</td>
+      <td>€214.88</td>
+      <td>€185.58</td>
+    </tr>
+    <tr>
+      <td><a href="DE_report.html" target="_blank">DE</a></td>
+      <td>01-06-2025</td>
+      <td>45.0</td>
+      <td>Industrials</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>10.51</td>
+      <td>€473.29</td>
+      <td>€567.95</td>
+      <td>€425.96</td>
+    </tr>
+    <tr>
+      <td><a href="APH_report.html" target="_blank">APH</a></td>
+      <td>01-06-2025</td>
+      <td>65.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.77</td>
+      <td>€83.64</td>
+      <td>€92.00</td>
+      <td>€79.46</td>
+    </tr>
+    <tr>
+      <td><a href="CTVA_report.html" target="_blank">CTVA</a></td>
+      <td>01-06-2025</td>
+      <td>61.0</td>
+      <td>Basic Materials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.12</td>
+      <td>€65.69</td>
+      <td>€72.26</td>
+      <td>€62.41</td>
+    </tr>
+    <tr>
+      <td><a href="ECL_report.html" target="_blank">ECL</a></td>
+      <td>01-06-2025</td>
+      <td>67.0</td>
+      <td>Basic Materials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.11</td>
+      <td>€249.13</td>
+      <td>€274.04</td>
+      <td>€236.67</td>
+    </tr>
+    <tr>
+      <td><a href="PODD_report.html" target="_blank">PODD</a></td>
+      <td>01-06-2025</td>
+      <td>84.0</td>
+      <td>Healthcare</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.78</td>
+      <td>€303.96</td>
+      <td>€334.36</td>
+      <td>€288.76</td>
+    </tr>
+    <tr>
+      <td><a href="MCK_report.html" target="_blank">MCK</a></td>
+      <td>01-06-2025</td>
+      <td>54.0</td>
+      <td>Healthcare</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>12.80</td>
+      <td>€671.14</td>
+      <td>€738.25</td>
+      <td>€637.58</td>
+    </tr>
+    <tr>
+      <td><a href="FFIV_report.html" target="_blank">FFIV</a></td>
+      <td>06-06-2025</td>
+      <td>75.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.54</td>
+      <td>€276.63</td>
+      <td>€304.29</td>
+      <td>€262.80</td>
+    </tr>
+    <tr>
+      <td><a href="GE_report.html" target="_blank">GE</a></td>
+      <td>06-06-2025</td>
+      <td>67.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.68</td>
+      <td>€237.10</td>
+      <td>€260.81</td>
+      <td>€225.25</td>
+    </tr>
+    <tr>
+      <td><a href="HWM_report.html" target="_blank">HWM</a></td>
+      <td>06-06-2025</td>
+      <td>84.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.40</td>
+      <td>€164.64</td>
+      <td>€181.11</td>
+      <td>€156.41</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>06-06-2025</td>
+      <td>55.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.33</td>
+      <td>€171.28</td>
+      <td>€188.40</td>
+      <td>€162.71</td>
+    </tr>
+    <tr>
+      <td><a href="RL_report.html" target="_blank">RL</a></td>
+      <td>06-06-2025</td>
+      <td>54.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.32</td>
+      <td>€257.89</td>
+      <td>€309.46</td>
+      <td>€232.10</td>
+    </tr>
+    <tr>
+      <td><a href="RCL_report.html" target="_blank">RCL</a></td>
+      <td>06-06-2025</td>
+      <td>64.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.19</td>
+      <td>€254.41</td>
+      <td>€279.85</td>
+      <td>€241.69</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>06-06-2025</td>
+      <td>55.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.33</td>
+      <td>€171.28</td>
+      <td>€188.40</td>
+      <td>€162.71</td>
+    </tr>
+    <tr>
+      <td><a href="DFS_report.html" target="_blank">DFS</a></td>
+      <td>06-06-2025</td>
+      <td>78.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.60</td>
+      <td>€187.32</td>
+      <td>€206.05</td>
+      <td>€177.95</td>
+    </tr>
+    <tr>
+      <td><a href="PAYC_report.html" target="_blank">PAYC</a></td>
+      <td>06-06-2025</td>
+      <td>67.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.30</td>
+      <td>€247.74</td>
+      <td>€272.52</td>
+      <td>€235.35</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>06-06-2025</td>
+      <td>63.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.60</td>
+      <td>€238.79</td>
+      <td>€262.67</td>
+      <td>€226.85</td>
+    </tr>
+    <tr>
+      <td><a href="RL_report.html" target="_blank">RL</a></td>
+      <td>06-06-2025</td>
+      <td>54.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.32</td>
+      <td>€257.89</td>
+      <td>€309.46</td>
+      <td>€232.10</td>
+    </tr>
+    <tr>
+      <td><a href="RCL_report.html" target="_blank">RCL</a></td>
+      <td>06-06-2025</td>
+      <td>64.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.19</td>
+      <td>€254.41</td>
+      <td>€279.85</td>
+      <td>€241.69</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>06-06-2025</td>
+      <td>55.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.33</td>
+      <td>€171.28</td>
+      <td>€188.40</td>
+      <td>€162.71</td>
+    </tr>
+    <tr>
+      <td><a href="DFS_report.html" target="_blank">DFS</a></td>
+      <td>06-06-2025</td>
+      <td>78.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.60</td>
+      <td>€187.32</td>
+      <td>€206.05</td>
+      <td>€177.95</td>
+    </tr>
+    <tr>
+      <td><a href="PAYC_report.html" target="_blank">PAYC</a></td>
+      <td>06-06-2025</td>
+      <td>67.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.30</td>
+      <td>€247.74</td>
+      <td>€272.52</td>
+      <td>€235.35</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>06-06-2025</td>
+      <td>63.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.60</td>
+      <td>€238.79</td>
+      <td>€262.67</td>
+      <td>€226.85</td>
+    </tr>
+    <tr>
+      <td><a href="AXON_report.html" target="_blank">AXON</a></td>
+      <td>06-06-2025</td>
+      <td>74.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>20.22</td>
+      <td>€739.34</td>
+      <td>€813.27</td>
+      <td>€702.37</td>
+    </tr>
+    <tr>
+      <td><a href="APH_report.html" target="_blank">APH</a></td>
+      <td>06-06-2025</td>
+      <td>87.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.60</td>
+      <td>€87.13</td>
+      <td>€95.85</td>
+      <td>€82.78</td>
+    </tr>
+    <tr>
+      <td><a href="CRWD_report.html" target="_blank">CRWD</a></td>
+      <td>06-06-2025</td>
+      <td>64.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>18.90</td>
+      <td>€430.82</td>
+      <td>€473.90</td>
+      <td>€409.27</td>
+    </tr>
+    <tr>
+      <td><a href="FFIV_report.html" target="_blank">FFIV</a></td>
+      <td>06-06-2025</td>
+      <td>75.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.54</td>
+      <td>€276.63</td>
+      <td>€304.29</td>
+      <td>€262.80</td>
+    </tr>
+    <tr>
+      <td><a href="RL_report.html" target="_blank">RL</a></td>
+      <td>06-06-2025</td>
+      <td>54.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.32</td>
+      <td>€257.89</td>
+      <td>€309.46</td>
+      <td>€232.10</td>
+    </tr>
+    <tr>
+      <td><a href="RCL_report.html" target="_blank">RCL</a></td>
+      <td>06-06-2025</td>
+      <td>64.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.19</td>
+      <td>€254.41</td>
+      <td>€279.85</td>
+      <td>€241.69</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>06-06-2025</td>
+      <td>55.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.33</td>
+      <td>€171.28</td>
+      <td>€188.40</td>
+      <td>€162.71</td>
+    </tr>
+    <tr>
+      <td><a href="DFS_report.html" target="_blank">DFS</a></td>
+      <td>06-06-2025</td>
+      <td>78.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.60</td>
+      <td>€187.32</td>
+      <td>€206.05</td>
+      <td>€177.95</td>
+    </tr>
+    <tr>
+      <td><a href="PAYC_report.html" target="_blank">PAYC</a></td>
+      <td>06-06-2025</td>
+      <td>67.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.30</td>
+      <td>€247.74</td>
+      <td>€272.52</td>
+      <td>€235.35</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>06-06-2025</td>
+      <td>63.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.60</td>
+      <td>€238.79</td>
+      <td>€262.67</td>
+      <td>€226.85</td>
+    </tr>
+    <tr>
+      <td><a href="RL_report.html" target="_blank">RL</a></td>
+      <td>06-06-2025</td>
+      <td>54.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.32</td>
+      <td>€257.89</td>
+      <td>€309.46</td>
+      <td>€232.10</td>
+    </tr>
+    <tr>
+      <td><a href="RCL_report.html" target="_blank">RCL</a></td>
+      <td>06-06-2025</td>
+      <td>64.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.19</td>
+      <td>€254.41</td>
+      <td>€279.85</td>
+      <td>€241.69</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>06-06-2025</td>
+      <td>55.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.33</td>
+      <td>€171.28</td>
+      <td>€188.40</td>
+      <td>€162.71</td>
+    </tr>
+    <tr>
+      <td><a href="DFS_report.html" target="_blank">DFS</a></td>
+      <td>06-06-2025</td>
+      <td>78.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.60</td>
+      <td>€187.32</td>
+      <td>€206.05</td>
+      <td>€177.95</td>
+    </tr>
+    <tr>
+      <td><a href="PAYC_report.html" target="_blank">PAYC</a></td>
+      <td>06-06-2025</td>
+      <td>67.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.30</td>
+      <td>€247.74</td>
+      <td>€272.52</td>
+      <td>€235.35</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>06-06-2025</td>
+      <td>63.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.60</td>
+      <td>€238.79</td>
+      <td>€262.67</td>
+      <td>€226.85</td>
+    </tr>
+    <tr>
+      <td><a href="AXON_report.html" target="_blank">AXON</a></td>
+      <td>06-06-2025</td>
+      <td>74.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>20.22</td>
+      <td>€739.34</td>
+      <td>€813.27</td>
+      <td>€702.37</td>
+    </tr>
+    <tr>
+      <td><a href="APH_report.html" target="_blank">APH</a></td>
+      <td>06-06-2025</td>
+      <td>87.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.60</td>
+      <td>€87.13</td>
+      <td>€95.85</td>
+      <td>€82.78</td>
+    </tr>
+    <tr>
+      <td><a href="CRWD_report.html" target="_blank">CRWD</a></td>
+      <td>06-06-2025</td>
+      <td>64.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>18.90</td>
+      <td>€430.82</td>
+      <td>€473.90</td>
+      <td>€409.27</td>
+    </tr>
+    <tr>
+      <td><a href="FFIV_report.html" target="_blank">FFIV</a></td>
+      <td>06-06-2025</td>
+      <td>75.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.54</td>
+      <td>€276.63</td>
+      <td>€304.29</td>
+      <td>€262.80</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>06-06-2025</td>
+      <td>63.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.60</td>
+      <td>€238.79</td>
+      <td>€262.67</td>
+      <td>€226.85</td>
+    </tr>
+    <tr>
+      <td><a href="RL_report.html" target="_blank">RL</a></td>
+      <td>06-06-2025</td>
+      <td>54.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.32</td>
+      <td>€257.89</td>
+      <td>€309.46</td>
+      <td>€232.10</td>
+    </tr>
+    <tr>
+      <td><a href="RCL_report.html" target="_blank">RCL</a></td>
+      <td>06-06-2025</td>
+      <td>64.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.19</td>
+      <td>€254.41</td>
+      <td>€279.85</td>
+      <td>€241.69</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>06-06-2025</td>
+      <td>55.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.33</td>
+      <td>€171.28</td>
+      <td>€188.40</td>
+      <td>€162.71</td>
+    </tr>
+    <tr>
+      <td><a href="DFS_report.html" target="_blank">DFS</a></td>
+      <td>06-06-2025</td>
+      <td>78.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.60</td>
+      <td>€187.32</td>
+      <td>€206.05</td>
+      <td>€177.95</td>
+    </tr>
+    <tr>
+      <td><a href="PAYC_report.html" target="_blank">PAYC</a></td>
+      <td>06-06-2025</td>
+      <td>67.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.30</td>
+      <td>€247.74</td>
+      <td>€272.52</td>
+      <td>€235.35</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>06-06-2025</td>
+      <td>63.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.60</td>
+      <td>€238.79</td>
+      <td>€262.67</td>
+      <td>€226.85</td>
+    </tr>
+    <tr>
+      <td><a href="RL_report.html" target="_blank">RL</a></td>
+      <td>06-06-2025</td>
+      <td>54.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.32</td>
+      <td>€257.89</td>
+      <td>€309.46</td>
+      <td>€232.10</td>
+    </tr>
+    <tr>
+      <td><a href="RCL_report.html" target="_blank">RCL</a></td>
+      <td>06-06-2025</td>
+      <td>64.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.19</td>
+      <td>€254.41</td>
+      <td>€279.85</td>
+      <td>€241.69</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>06-06-2025</td>
+      <td>55.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.33</td>
+      <td>€171.28</td>
+      <td>€188.40</td>
+      <td>€162.71</td>
+    </tr>
+    <tr>
+      <td><a href="DFS_report.html" target="_blank">DFS</a></td>
+      <td>06-06-2025</td>
+      <td>78.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.60</td>
+      <td>€187.32</td>
+      <td>€206.05</td>
+      <td>€177.95</td>
+    </tr>
+    <tr>
+      <td><a href="PAYC_report.html" target="_blank">PAYC</a></td>
+      <td>06-06-2025</td>
+      <td>67.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.30</td>
+      <td>€247.74</td>
+      <td>€272.52</td>
+      <td>€235.35</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>06-06-2025</td>
+      <td>63.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.60</td>
+      <td>€238.79</td>
+      <td>€262.67</td>
+      <td>€226.85</td>
+    </tr>
+    <tr>
+      <td><a href="AXON_report.html" target="_blank">AXON</a></td>
+      <td>06-06-2025</td>
+      <td>74.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>20.22</td>
+      <td>€739.34</td>
+      <td>€813.27</td>
+      <td>€702.37</td>
+    </tr>
+    <tr>
+      <td><a href="APH_report.html" target="_blank">APH</a></td>
+      <td>06-06-2025</td>
+      <td>87.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.60</td>
+      <td>€87.13</td>
+      <td>€95.85</td>
+      <td>€82.78</td>
+    </tr>
+    <tr>
+      <td><a href="CRWD_report.html" target="_blank">CRWD</a></td>
+      <td>06-06-2025</td>
+      <td>64.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>18.90</td>
+      <td>€430.82</td>
+      <td>€473.90</td>
+      <td>€409.27</td>
+    </tr>
+    <tr>
+      <td><a href="FFIV_report.html" target="_blank">FFIV</a></td>
+      <td>06-06-2025</td>
+      <td>75.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.54</td>
+      <td>€276.63</td>
+      <td>€304.29</td>
+      <td>€262.80</td>
+    </tr>
+    <tr>
+      <td><a href="RL_report.html" target="_blank">RL</a></td>
+      <td>06-06-2025</td>
+      <td>54.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.32</td>
+      <td>€257.89</td>
+      <td>€309.46</td>
+      <td>€232.10</td>
+    </tr>
+    <tr>
+      <td><a href="RCL_report.html" target="_blank">RCL</a></td>
+      <td>06-06-2025</td>
+      <td>64.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.19</td>
+      <td>€254.41</td>
+      <td>€279.85</td>
+      <td>€241.69</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>06-06-2025</td>
+      <td>55.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.33</td>
+      <td>€171.28</td>
+      <td>€188.40</td>
+      <td>€162.71</td>
+    </tr>
+    <tr>
+      <td><a href="DFS_report.html" target="_blank">DFS</a></td>
+      <td>06-06-2025</td>
+      <td>78.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.60</td>
+      <td>€187.32</td>
+      <td>€206.05</td>
+      <td>€177.95</td>
+    </tr>
+    <tr>
+      <td><a href="PAYC_report.html" target="_blank">PAYC</a></td>
+      <td>06-06-2025</td>
+      <td>67.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.30</td>
+      <td>€247.74</td>
+      <td>€272.52</td>
+      <td>€235.35</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>06-06-2025</td>
+      <td>63.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.60</td>
+      <td>€238.79</td>
+      <td>€262.67</td>
+      <td>€226.85</td>
+    </tr>
+    <tr>
+      <td><a href="RL_report.html" target="_blank">RL</a></td>
+      <td>06-06-2025</td>
+      <td>54.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.32</td>
+      <td>€257.89</td>
+      <td>€309.46</td>
+      <td>€232.10</td>
+    </tr>
+    <tr>
+      <td><a href="RCL_report.html" target="_blank">RCL</a></td>
+      <td>06-06-2025</td>
+      <td>64.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.19</td>
+      <td>€254.41</td>
+      <td>€279.85</td>
+      <td>€241.69</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>06-06-2025</td>
+      <td>55.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.33</td>
+      <td>€171.28</td>
+      <td>€188.40</td>
+      <td>€162.71</td>
+    </tr>
+    <tr>
+      <td><a href="DFS_report.html" target="_blank">DFS</a></td>
+      <td>06-06-2025</td>
+      <td>78.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.60</td>
+      <td>€187.32</td>
+      <td>€206.05</td>
+      <td>€177.95</td>
+    </tr>
+    <tr>
+      <td><a href="PAYC_report.html" target="_blank">PAYC</a></td>
+      <td>06-06-2025</td>
+      <td>67.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.30</td>
+      <td>€247.74</td>
+      <td>€272.52</td>
+      <td>€235.35</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>06-06-2025</td>
+      <td>63.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.60</td>
+      <td>€238.79</td>
+      <td>€262.67</td>
+      <td>€226.85</td>
+    </tr>
+    <tr>
+      <td><a href="AXON_report.html" target="_blank">AXON</a></td>
+      <td>06-06-2025</td>
+      <td>74.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>20.22</td>
+      <td>€739.34</td>
+      <td>€813.27</td>
+      <td>€702.37</td>
+    </tr>
+    <tr>
+      <td><a href="APH_report.html" target="_blank">APH</a></td>
+      <td>06-06-2025</td>
+      <td>87.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.60</td>
+      <td>€87.13</td>
+      <td>€95.85</td>
+      <td>€82.78</td>
+    </tr>
+    <tr>
+      <td><a href="CRWD_report.html" target="_blank">CRWD</a></td>
+      <td>06-06-2025</td>
+      <td>64.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>18.90</td>
+      <td>€430.82</td>
+      <td>€473.90</td>
+      <td>€409.27</td>
+    </tr>
+    <tr>
+      <td><a href="FFIV_report.html" target="_blank">FFIV</a></td>
+      <td>06-06-2025</td>
+      <td>75.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.54</td>
+      <td>€276.63</td>
+      <td>€304.29</td>
+      <td>€262.80</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>06-06-2025</td>
+      <td>63.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.60</td>
+      <td>€238.79</td>
+      <td>€262.67</td>
+      <td>€226.85</td>
+    </tr>
+    <tr>
+      <td><a href="HWM_report.html" target="_blank">HWM</a></td>
+      <td>06-06-2025</td>
+      <td>84.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.40</td>
+      <td>€164.64</td>
+      <td>€181.11</td>
+      <td>€156.41</td>
+    </tr>
+    <tr>
+      <td><a href="RCL_report.html" target="_blank">RCL</a></td>
+      <td>06-06-2025</td>
+      <td>64.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.19</td>
+      <td>€254.41</td>
+      <td>€279.85</td>
+      <td>€241.69</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>06-06-2025</td>
+      <td>55.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.33</td>
+      <td>€171.28</td>
+      <td>€188.40</td>
+      <td>€162.71</td>
+    </tr>
+    <tr>
+      <td><a href="RCL_report.html" target="_blank">RCL</a></td>
+      <td>06-06-2025</td>
+      <td>64.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.19</td>
+      <td>€254.41</td>
+      <td>€279.85</td>
+      <td>€241.69</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>06-06-2025</td>
+      <td>55.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.33</td>
+      <td>€171.28</td>
+      <td>€188.40</td>
+      <td>€162.71</td>
+    </tr>
+    <tr>
+      <td><a href="DFS_report.html" target="_blank">DFS</a></td>
+      <td>06-06-2025</td>
+      <td>78.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.60</td>
+      <td>€187.32</td>
+      <td>€206.05</td>
+      <td>€177.95</td>
+    </tr>
+    <tr>
+      <td><a href="PAYC_report.html" target="_blank">PAYC</a></td>
+      <td>06-06-2025</td>
+      <td>67.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.30</td>
+      <td>€247.74</td>
+      <td>€272.52</td>
+      <td>€235.35</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>06-06-2025</td>
+      <td>63.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.60</td>
+      <td>€238.79</td>
+      <td>€262.67</td>
+      <td>€226.85</td>
+    </tr>
+    <tr>
+      <td><a href="RCL_report.html" target="_blank">RCL</a></td>
+      <td>06-06-2025</td>
+      <td>64.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.19</td>
+      <td>€254.41</td>
+      <td>€279.85</td>
+      <td>€241.69</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>06-06-2025</td>
+      <td>55.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.33</td>
+      <td>€171.28</td>
+      <td>€188.40</td>
+      <td>€162.71</td>
+    </tr>
+    <tr>
+      <td><a href="HWM_report.html" target="_blank">HWM</a></td>
+      <td>06-06-2025</td>
+      <td>84.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.40</td>
+      <td>€164.64</td>
+      <td>€181.11</td>
+      <td>€156.41</td>
+    </tr>
+    <tr>
+      <td><a href="RCL_report.html" target="_blank">RCL</a></td>
+      <td>06-06-2025</td>
+      <td>64.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.19</td>
+      <td>€254.41</td>
+      <td>€279.85</td>
+      <td>€241.69</td>
+    </tr>
+    <tr>
+      <td><a href="ADP_report.html" target="_blank">ADP</a></td>
+      <td>06-06-2025</td>
+      <td>62.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.04</td>
+      <td>€308.00</td>
+      <td>€338.80</td>
+      <td>€292.60</td>
+    </tr>
+    <tr>
+      <td><a href="AXON_report.html" target="_blank">AXON</a></td>
+      <td>06-06-2025</td>
+      <td>74.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>20.22</td>
+      <td>€739.34</td>
+      <td>€813.27</td>
+      <td>€702.37</td>
+    </tr>
+    <tr>
+      <td><a href="CTAS_report.html" target="_blank">CTAS</a></td>
+      <td>06-06-2025</td>
+      <td>64.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>2.90</td>
+      <td>€214.18</td>
+      <td>€235.60</td>
+      <td>€203.47</td>
+    </tr>
+    <tr>
+      <td><a href="HWM_report.html" target="_blank">HWM</a></td>
+      <td>06-06-2025</td>
+      <td>84.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.40</td>
+      <td>€164.64</td>
+      <td>€181.11</td>
+      <td>€156.41</td>
+    </tr>
+    <tr>
+      <td><a href="JCI_report.html" target="_blank">JCI</a></td>
+      <td>06-06-2025</td>
+      <td>59.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.77</td>
+      <td>€96.36</td>
+      <td>€105.99</td>
+      <td>€91.54</td>
+    </tr>
+    <tr>
+      <td><a href="PAYX_report.html" target="_blank">PAYX</a></td>
+      <td>06-06-2025</td>
+      <td>70.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>2.17</td>
+      <td>€150.31</td>
+      <td>€165.34</td>
+      <td>€142.79</td>
+    </tr>
+    <tr>
+      <td><a href="PAYC_report.html" target="_blank">PAYC</a></td>
+      <td>06-06-2025</td>
+      <td>67.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.30</td>
+      <td>€247.74</td>
+      <td>€272.52</td>
+      <td>€235.35</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>06-06-2025</td>
+      <td>63.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.60</td>
+      <td>€238.79</td>
+      <td>€262.67</td>
+      <td>€226.85</td>
+    </tr>
+    <tr>
+      <td><a href="VRSK_report.html" target="_blank">VRSK</a></td>
+      <td>06-06-2025</td>
+      <td>63.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.48</td>
+      <td>€302.43</td>
+      <td>€332.68</td>
+      <td>€287.31</td>
+    </tr>
+    <tr>
+      <td><a href="APH_report.html" target="_blank">APH</a></td>
+      <td>06-06-2025</td>
+      <td>87.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.60</td>
+      <td>€87.13</td>
+      <td>€95.85</td>
+      <td>€82.78</td>
+    </tr>
+    <tr>
+      <td><a href="RL_report.html" target="_blank">RL</a></td>
+      <td>06-06-2025</td>
+      <td>54.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.32</td>
+      <td>€257.89</td>
+      <td>€309.46</td>
+      <td>€232.10</td>
+    </tr>
+    <tr>
+      <td><a href="RCL_report.html" target="_blank">RCL</a></td>
+      <td>06-06-2025</td>
+      <td>64.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.19</td>
+      <td>€254.41</td>
+      <td>€279.85</td>
+      <td>€241.69</td>
+    </tr>
+    <tr>
+      <td><a href="DFS_report.html" target="_blank">DFS</a></td>
+      <td>06-06-2025</td>
+      <td>78.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.60</td>
+      <td>€187.32</td>
+      <td>€206.05</td>
+      <td>€177.95</td>
+    </tr>
+    <tr>
+      <td><a href="PAYC_report.html" target="_blank">PAYC</a></td>
+      <td>06-06-2025</td>
+      <td>67.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.30</td>
+      <td>€247.74</td>
+      <td>€272.52</td>
+      <td>€235.35</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>06-06-2025</td>
+      <td>63.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.60</td>
+      <td>€238.79</td>
+      <td>€262.67</td>
+      <td>€226.85</td>
+    </tr>
+    <tr>
+      <td><a href="RL_report.html" target="_blank">RL</a></td>
+      <td>06-06-2025</td>
+      <td>54.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.32</td>
+      <td>€257.89</td>
+      <td>€309.46</td>
+      <td>€232.10</td>
+    </tr>
+    <tr>
+      <td><a href="RCL_report.html" target="_blank">RCL</a></td>
+      <td>06-06-2025</td>
+      <td>64.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.19</td>
+      <td>€254.41</td>
+      <td>€279.85</td>
+      <td>€241.69</td>
+    </tr>
+    <tr>
+      <td><a href="DFS_report.html" target="_blank">DFS</a></td>
+      <td>06-06-2025</td>
+      <td>78.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.60</td>
+      <td>€187.32</td>
+      <td>€206.05</td>
+      <td>€177.95</td>
+    </tr>
+    <tr>
+      <td><a href="PAYC_report.html" target="_blank">PAYC</a></td>
+      <td>06-06-2025</td>
+      <td>67.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.30</td>
+      <td>€247.74</td>
+      <td>€272.52</td>
+      <td>€235.35</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>06-06-2025</td>
+      <td>63.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.60</td>
+      <td>€238.79</td>
+      <td>€262.67</td>
+      <td>€226.85</td>
+    </tr>
+    <tr>
+      <td><a href="AXON_report.html" target="_blank">AXON</a></td>
+      <td>06-06-2025</td>
+      <td>74.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>20.22</td>
+      <td>€739.34</td>
+      <td>€813.27</td>
+      <td>€702.37</td>
+    </tr>
+    <tr>
+      <td><a href="APH_report.html" target="_blank">APH</a></td>
+      <td>06-06-2025</td>
+      <td>87.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.60</td>
+      <td>€87.13</td>
+      <td>€95.85</td>
+      <td>€82.78</td>
+    </tr>
+    <tr>
+      <td><a href="RL_report.html" target="_blank">RL</a></td>
+      <td>06-06-2025</td>
+      <td>54.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.32</td>
+      <td>€257.89</td>
+      <td>€309.46</td>
+      <td>€232.10</td>
+    </tr>
+    <tr>
+      <td><a href="RCL_report.html" target="_blank">RCL</a></td>
+      <td>06-06-2025</td>
+      <td>64.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.19</td>
+      <td>€254.41</td>
+      <td>€279.85</td>
+      <td>€241.69</td>
+    </tr>
+    <tr>
+      <td><a href="DFS_report.html" target="_blank">DFS</a></td>
+      <td>06-06-2025</td>
+      <td>78.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.60</td>
+      <td>€187.32</td>
+      <td>€206.05</td>
+      <td>€177.95</td>
+    </tr>
+    <tr>
+      <td><a href="PAYC_report.html" target="_blank">PAYC</a></td>
+      <td>06-06-2025</td>
+      <td>67.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.30</td>
+      <td>€247.74</td>
+      <td>€272.52</td>
+      <td>€235.35</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>06-06-2025</td>
+      <td>63.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.60</td>
+      <td>€238.79</td>
+      <td>€262.67</td>
+      <td>€226.85</td>
+    </tr>
+    <tr>
+      <td><a href="RL_report.html" target="_blank">RL</a></td>
+      <td>06-06-2025</td>
+      <td>54.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.32</td>
+      <td>€257.89</td>
+      <td>€309.46</td>
+      <td>€232.10</td>
+    </tr>
+    <tr>
+      <td><a href="RCL_report.html" target="_blank">RCL</a></td>
+      <td>06-06-2025</td>
+      <td>64.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.19</td>
+      <td>€254.41</td>
+      <td>€279.85</td>
+      <td>€241.69</td>
+    </tr>
+    <tr>
+      <td><a href="DFS_report.html" target="_blank">DFS</a></td>
+      <td>06-06-2025</td>
+      <td>78.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.60</td>
+      <td>€187.32</td>
+      <td>€206.05</td>
+      <td>€177.95</td>
+    </tr>
+    <tr>
+      <td><a href="PAYC_report.html" target="_blank">PAYC</a></td>
+      <td>06-06-2025</td>
+      <td>67.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.30</td>
+      <td>€247.74</td>
+      <td>€272.52</td>
+      <td>€235.35</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>06-06-2025</td>
+      <td>63.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.60</td>
+      <td>€238.79</td>
+      <td>€262.67</td>
+      <td>€226.85</td>
+    </tr>
+    <tr>
+      <td><a href="AXON_report.html" target="_blank">AXON</a></td>
+      <td>06-06-2025</td>
+      <td>74.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>20.22</td>
+      <td>€739.34</td>
+      <td>€813.27</td>
+      <td>€702.37</td>
+    </tr>
+    <tr>
+      <td><a href="APH_report.html" target="_blank">APH</a></td>
+      <td>06-06-2025</td>
+      <td>87.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.60</td>
+      <td>€87.13</td>
+      <td>€95.85</td>
+      <td>€82.78</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>06-06-2025</td>
+      <td>63.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.60</td>
+      <td>€238.79</td>
+      <td>€262.67</td>
+      <td>€226.85</td>
+    </tr>
+    <tr>
+      <td><a href="RL_report.html" target="_blank">RL</a></td>
+      <td>06-06-2025</td>
+      <td>54.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.32</td>
+      <td>€257.89</td>
+      <td>€309.46</td>
+      <td>€232.10</td>
+    </tr>
+    <tr>
+      <td><a href="RCL_report.html" target="_blank">RCL</a></td>
+      <td>06-06-2025</td>
+      <td>64.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.19</td>
+      <td>€254.41</td>
+      <td>€279.85</td>
+      <td>€241.69</td>
+    </tr>
+    <tr>
+      <td><a href="DFS_report.html" target="_blank">DFS</a></td>
+      <td>06-06-2025</td>
+      <td>78.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.60</td>
+      <td>€187.32</td>
+      <td>€206.05</td>
+      <td>€177.95</td>
+    </tr>
+    <tr>
+      <td><a href="PAYC_report.html" target="_blank">PAYC</a></td>
+      <td>06-06-2025</td>
+      <td>67.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.30</td>
+      <td>€247.74</td>
+      <td>€272.52</td>
+      <td>€235.35</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>06-06-2025</td>
+      <td>63.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.60</td>
+      <td>€238.79</td>
+      <td>€262.67</td>
+      <td>€226.85</td>
+    </tr>
+    <tr>
+      <td><a href="RL_report.html" target="_blank">RL</a></td>
+      <td>06-06-2025</td>
+      <td>54.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.32</td>
+      <td>€257.89</td>
+      <td>€309.46</td>
+      <td>€232.10</td>
+    </tr>
+    <tr>
+      <td><a href="RCL_report.html" target="_blank">RCL</a></td>
+      <td>06-06-2025</td>
+      <td>64.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.19</td>
+      <td>€254.41</td>
+      <td>€279.85</td>
+      <td>€241.69</td>
+    </tr>
+    <tr>
+      <td><a href="DFS_report.html" target="_blank">DFS</a></td>
+      <td>06-06-2025</td>
+      <td>78.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.60</td>
+      <td>€187.32</td>
+      <td>€206.05</td>
+      <td>€177.95</td>
+    </tr>
+    <tr>
+      <td><a href="PAYC_report.html" target="_blank">PAYC</a></td>
+      <td>06-06-2025</td>
+      <td>67.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.30</td>
+      <td>€247.74</td>
+      <td>€272.52</td>
+      <td>€235.35</td>
+    </tr>
+    <tr>
+      <td><a href="RSG_report.html" target="_blank">RSG</a></td>
+      <td>06-06-2025</td>
+      <td>63.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.60</td>
+      <td>€238.79</td>
+      <td>€262.67</td>
+      <td>€226.85</td>
+    </tr>
+    <tr>
+      <td><a href="AXON_report.html" target="_blank">AXON</a></td>
+      <td>06-06-2025</td>
+      <td>74.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>20.22</td>
+      <td>€739.34</td>
+      <td>€813.27</td>
+      <td>€702.37</td>
+    </tr>
+    <tr>
+      <td><a href="APH_report.html" target="_blank">APH</a></td>
+      <td>06-06-2025</td>
+      <td>87.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.60</td>
+      <td>€87.13</td>
+      <td>€95.85</td>
+      <td>€82.78</td>
+    </tr>
+    <tr>
+      <td><a href="RL_report.html" target="_blank">RL</a></td>
+      <td>06-06-2025</td>
+      <td>54.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.32</td>
+      <td>€257.89</td>
+      <td>€309.46</td>
+      <td>€232.10</td>
+    </tr>
+    <tr>
+      <td><a href="RL_report.html" target="_blank">RL</a></td>
+      <td>09-06-2025</td>
+      <td>54.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.32</td>
+      <td>€257.89</td>
+      <td>€309.46</td>
+      <td>€232.10</td>
+    </tr>
+    <tr>
+      <td><a href="RCL_report.html" target="_blank">RCL</a></td>
+      <td>09-06-2025</td>
+      <td>64.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.19</td>
+      <td>€254.41</td>
+      <td>€279.85</td>
+      <td>€241.69</td>
+    </tr>
+    <tr>
+      <td><a href="MNST_report.html" target="_blank">MNST</a></td>
+      <td>09-06-2025</td>
+      <td>49.0</td>
+      <td>Consumer Defensive</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>0.99</td>
+      <td>€59.38</td>
+      <td>€71.26</td>
+      <td>€53.45</td>
+    </tr>
+    <tr>
+      <td><a href="PM_report.html" target="_blank">PM</a></td>
+      <td>09-06-2025</td>
+      <td>55.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.33</td>
+      <td>€171.28</td>
+      <td>€188.40</td>
+      <td>€162.71</td>
+    </tr>
+    <tr>
+      <td><a href="DFS_report.html" target="_blank">DFS</a></td>
+      <td>09-06-2025</td>
+      <td>78.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>6.60</td>
+      <td>€187.32</td>
+      <td>€206.05</td>
+      <td>€177.95</td>
+    </tr>
+    <tr>
+      <td><a href="NDAQ_report.html" target="_blank">NDAQ</a></td>
+      <td>09-06-2025</td>
+      <td>58.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.13</td>
+      <td>€79.27</td>
+      <td>€87.19</td>
+      <td>€75.30</td>
+    </tr>
+    <tr>
+      <td><a href="CAH_report.html" target="_blank">CAH</a></td>
+      <td>09-06-2025</td>
+      <td>48.0</td>
+      <td>Healthcare</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>2.43</td>
+      <td>€145.26</td>
+      <td>€174.31</td>
+      <td>€130.73</td>
+    </tr>
+    <tr>
+      <td><a href="JCI_report.html" target="_blank">JCI</a></td>
+      <td>09-06-2025</td>
+      <td>59.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.77</td>
+      <td>€96.36</td>
+      <td>€105.99</td>
+      <td>€91.54</td>
+    </tr>
+    <tr>
+      <td><a href="CRWD_report.html" target="_blank">CRWD</a></td>
+      <td>09-06-2025</td>
+      <td>64.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 100%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>18.90</td>
+      <td>€430.82</td>
+      <td>€473.90</td>
+      <td>€409.27</td>
+    </tr>
+    <tr>
+      <td><a href="FFIV_report.html" target="_blank">FFIV</a></td>
+      <td>09-06-2025</td>
+      <td>75.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.54</td>
+      <td>€276.63</td>
+      <td>€304.29</td>
+      <td>€262.80</td>
+    </tr>
+    <tr>
+      <td><a href="AVGO_report.html" target="_blank">AVGO</a></td>
+      <td>08-07-2025</td>
+      <td>74.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.74</td>
+      <td>€256.79</td>
+      <td>€282.47</td>
+      <td>€243.95</td>
+    </tr>
+    <tr>
+      <td><a href="UBER_report.html" target="_blank">UBER</a></td>
+      <td>08-07-2025</td>
+      <td>86.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>2.86</td>
+      <td>€90.49</td>
+      <td>€99.54</td>
+      <td>€85.96</td>
+    </tr>
+    <tr>
+      <td><a href="GE_report.html" target="_blank">GE</a></td>
+      <td>08-07-2025</td>
+      <td>61.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.55</td>
+      <td>€233.59</td>
+      <td>€256.94</td>
+      <td>€221.91</td>
+    </tr>
+    <tr>
+      <td><a href="MDLZ_report.html" target="_blank">MDLZ</a></td>
+      <td>08-07-2025</td>
+      <td>64.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.12</td>
+      <td>€64.85</td>
+      <td>€71.33</td>
+      <td>€61.60</td>
+    </tr>
+    <tr>
+      <td><a href="NFLX_report.html" target="_blank">NFLX</a></td>
+      <td>08-07-2025</td>
+      <td>61.0</td>
+      <td>Communication Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>27.87</td>
+      <td>€1211.91</td>
+      <td>€1333.10</td>
+      <td>€1151.31</td>
+    </tr>
+    <tr>
+      <td><a href="NWS_report.html" target="_blank">NWS</a></td>
+      <td>08-07-2025</td>
+      <td>72.0</td>
+      <td>Communication Services</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>0.46</td>
+      <td>€32.01</td>
+      <td>€35.21</td>
+      <td>€30.41</td>
+    </tr>
+    <tr>
+      <td><a href="TTWO_report.html" target="_blank">TTWO</a></td>
+      <td>08-07-2025</td>
+      <td>61.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.58</td>
+      <td>€228.23</td>
+      <td>€251.05</td>
+      <td>€216.82</td>
+    </tr>
+    <tr>
+      <td><a href="APTV_report.html" target="_blank">APTV</a></td>
+      <td>08-07-2025</td>
+      <td>85.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.84</td>
+      <td>€67.55</td>
+      <td>€74.31</td>
+      <td>€64.18</td>
+    </tr>
+    <tr>
+      <td><a href="BKNG_report.html" target="_blank">BKNG</a></td>
+      <td>08-07-2025</td>
+      <td>87.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Lungo Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>109.22</td>
+      <td>€5473.24</td>
+      <td>€6567.89</td>
+      <td>€4925.92</td>
+    </tr>
+    <tr>
+      <td><a href="DRI_report.html" target="_blank">DRI</a></td>
+      <td>08-07-2025</td>
+      <td>51.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>4.64</td>
+      <td>€203.02</td>
+      <td>€243.62</td>
+      <td>€182.71</td>
+    </tr>
+    <tr>
+      <td><a href="DG_report.html" target="_blank">DG</a></td>
+      <td>08-07-2025</td>
+      <td>72.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>2.77</td>
+      <td>€109.16</td>
+      <td>€120.08</td>
+      <td>€103.71</td>
+    </tr>
+    <tr>
+      <td><a href="DLTR_report.html" target="_blank">DLTR</a></td>
+      <td>08-07-2025</td>
+      <td>66.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>2.76</td>
+      <td>€97.71</td>
+      <td>€107.48</td>
+      <td>€92.82</td>
+    </tr>
+    <tr>
+      <td><a href="COF_report.html" target="_blank">COF</a></td>
+      <td>08-07-2025</td>
+      <td>91.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.41</td>
+      <td>€205.12</td>
+      <td>€225.64</td>
+      <td>€194.87</td>
+    </tr>
+    <tr>
+      <td><a href="CBOE_report.html" target="_blank">CBOE</a></td>
+      <td>08-07-2025</td>
+      <td>73.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.87</td>
+      <td>€221.15</td>
+      <td>€243.27</td>
+      <td>€210.09</td>
+    </tr>
+    <tr>
+      <td><a href="GE_report.html" target="_blank">GE</a></td>
+      <td>08-07-2025</td>
+      <td>61.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.55</td>
+      <td>€233.59</td>
+      <td>€256.94</td>
+      <td>€221.91</td>
+    </tr>
+    <tr>
+      <td><a href="GD_report.html" target="_blank">GD</a></td>
+      <td>08-07-2025</td>
+      <td>71.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.36</td>
+      <td>€277.85</td>
+      <td>€305.63</td>
+      <td>€263.95</td>
+    </tr>
+    <tr>
+      <td><a href="CSCO_report.html" target="_blank">CSCO</a></td>
+      <td>08-07-2025</td>
+      <td>70.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>0.99</td>
+      <td>€65.01</td>
+      <td>€71.51</td>
+      <td>€61.76</td>
+    </tr>
+    <tr>
+      <td><a href="CRWD_report.html" target="_blank">CRWD</a></td>
+      <td>08-07-2025</td>
+      <td>65.0</td>
+      <td>Technology</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>16.65</td>
+      <td>€472.28</td>
+      <td>€566.74</td>
+      <td>€425.05</td>
+    </tr>
+    <tr>
+      <td><a href="MOS_report.html" target="_blank">MOS</a></td>
+      <td>08-07-2025</td>
+      <td>61.0</td>
+      <td>Basic Materials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>0.89</td>
+      <td>€35.39</td>
+      <td>€38.93</td>
+      <td>€33.62</td>
+    </tr>
+    <tr>
+      <td><a href="NEM_report.html" target="_blank">NEM</a></td>
+      <td>08-07-2025</td>
+      <td>81.0</td>
+      <td>Basic Materials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.53</td>
+      <td>€56.42</td>
+      <td>€62.06</td>
+      <td>€53.60</td>
+    </tr>
+    <tr>
+      <td><a href="UBER_report.html" target="_blank">UBER</a></td>
+      <td>10-07-2025</td>
+      <td>86.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>2.65</td>
+      <td>€90.54</td>
+      <td>€99.60</td>
+      <td>€86.02</td>
+    </tr>
+    <tr>
+      <td><a href="AVGO_report.html" target="_blank">AVGO</a></td>
+      <td>10-07-2025</td>
+      <td>69.0</td>
+      <td>Technology</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>7.43</td>
+      <td>€260.47</td>
+      <td>€286.52</td>
+      <td>€247.45</td>
+    </tr>
+    <tr>
+      <td><a href="NFLX_report.html" target="_blank">NFLX</a></td>
+      <td>19-07-2025</td>
+      <td>59.0</td>
+      <td>Communication Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>29.08</td>
+      <td>€1196.65</td>
+      <td>€1316.31</td>
+      <td>€1136.82</td>
+    </tr>
+    <tr>
+      <td><a href="PARA_report.html" target="_blank">PARA</a></td>
+      <td>19-07-2025</td>
+      <td>61.0</td>
+      <td>Communication Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>0.22</td>
+      <td>€12.19</td>
+      <td>€13.41</td>
+      <td>€11.58</td>
+    </tr>
+    <tr>
+      <td><a href="BKNG_report.html" target="_blank">BKNG</a></td>
+      <td>19-07-2025</td>
+      <td>59.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Lungo Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>98.30</td>
+      <td>€5353.05</td>
+      <td>€6423.66</td>
+      <td>€4817.75</td>
+    </tr>
+    <tr>
+      <td><a href="EBAY_report.html" target="_blank">EBAY</a></td>
+      <td>19-07-2025</td>
+      <td>55.0</td>
+      <td>Consumer Cyclical</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 75%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>1.39</td>
+      <td>€72.29</td>
+      <td>€79.51</td>
+      <td>€68.67</td>
+    </tr>
+    <tr>
+      <td><a href="DLTR_report.html" target="_blank">DLTR</a></td>
+      <td>19-07-2025</td>
+      <td>69.0</td>
+      <td>Consumer Defensive</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>2.70</td>
+      <td>€101.46</td>
+      <td>€111.61</td>
+      <td>€96.39</td>
+    </tr>
+    <tr>
+      <td><a href="COF_report.html" target="_blank">COF</a></td>
+      <td>19-07-2025</td>
+      <td>57.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>3.92</td>
+      <td>€205.24</td>
+      <td>€225.76</td>
+      <td>€194.98</td>
+    </tr>
+    <tr>
+      <td><a href="CBOE_report.html" target="_blank">CBOE</a></td>
+      <td>19-07-2025</td>
+      <td>78.0</td>
+      <td>Financial Services</td>
+      <td>Medio Termine</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.40</td>
+      <td>€223.86</td>
+      <td>€246.24</td>
+      <td>€212.67</td>
+    </tr>
+    <tr>
+      <td><a href="GD_report.html" target="_blank">GD</a></td>
+      <td>19-07-2025</td>
+      <td>70.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>4.14</td>
+      <td>€283.12</td>
+      <td>€311.43</td>
+      <td>€268.96</td>
+    </tr>
+    <tr>
+      <td><a href="HII_report.html" target="_blank">HII</a></td>
+      <td>19-07-2025</td>
+      <td>61.0</td>
+      <td>Industrials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 66%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Espansione</td>
+      <td>5.39</td>
+      <td>€240.03</td>
+      <td>€264.03</td>
+      <td>€228.03</td>
+    </tr>
+    <tr>
+      <td><a href="NEM_report.html" target="_blank">NEM</a></td>
+      <td>19-07-2025</td>
+      <td>54.0</td>
+      <td>Basic Materials</td>
+      <td>Medio Termine</td>
+      <td>NO TRADE/SELL</td>
+      <td>BUY/HOLD 100%</td>
+      <td>BUY/HOLD 66%</td>
+      <td>Recessione moderata</td>
+      <td>Ritracciamento</td>
+      <td>1.93</td>
+      <td>€54.18</td>
+      <td>€59.60</td>
+      <td>€51.47</td>
+    </tr>
+  </tbody>
+</table></div></div></div></section><section class="container2">  
+                <h1> Linea guida dettagliata per investimenti medio-lungo termine tramite piano di accumulo (PAC)</h1>
+                <p><b>Obiettivo dell'investimento:</b> <ul><li>Investire nel medio-lungo termine (3 mesi - 1 anno);</li>
+                <li>Sfruttare il <b>piano di accumulo (PAC)</b> per ridurre i costi di commissione e acquistare anche frazioni di azioni;</li>
+                <li>Aumentare gradualmente il capitale investito da 100 €/mese a 200-400€/mese, basandosi sulle performance del portafoglio.</li></ul></p>
+                <h2>FASE 1: SELEZIONE DEI TITOLI MIGLIORI"</h2>
+    <ol><li>Filtrare le azioni con criteri fondamentali, tecnici e macroeconomici</li>
+    <li>Identificare i settori migliori per la fase di mercato attuale</li>
+    </ol>
+    <p><b>Risultato:</b> Una lista di titoli con punteggi alti e buone prospettive di crescita nel periodo desiderato.</p>
+    <h2>FASE 2: ANALISI DELLA DURATA DEL TRADE</h2>
+    <p>Utilizzo di dati settimanali per individuare trend consolidati:</p>
+    <ul><li>Medio termine(1-3 mesi): Trend positivo nei dati settimanali, confermato dai giornalieri;</li></ul>
+    <li>Lungo termine(3-12 mesi): Trend settimanale positivo, anche se giornaliero è neutro o leggermente negativo.</li>   
+    <p><b>Risultato:</b> Capire quanto tempo lasciare il capitale investito prima di ribilanciare.</p>
+    <h2>FASE 3: DECISIONE DI INGRESSO (BUY O NO TRADE)</h2>
+    <p><b>Comprare solo se tutte queste condizioni sono rispettate:</b></p>
+    <ul>
+    <li>Segnale BUY solo se il segnale è positivo su almeno 2 orizzonti temporali <i>(meglio se lungo + medio termine)</i>.</li>
+    <li>Il mercato globale non è in recessione profonda.</li>
+    <li>Il settore è in crescita o comunque stabile.</li>    </ul>
+    <p><i><b>NO TRADE</b> se il segnale è negativo su almeno 2 orizzonti temporali e <b>ATTESA</b> se breve termine è negativo ma medio e lungo sono forti (potenziale punto d'ingresso migliore in arrivo).</i></p>
+    <h2>FASE 4: STRATEGIA DI ACCUMULO E GESTIONE RISCHIO</h2>
+    <ul><li>Investire ogni mese una parte fissa del capitale disponibile (es. 100€, poi 200-400€).</li>
+    <li>Aumentare l'investimento nei mesi in cui il mercato offre le migliori opportunità.</li>
+    <li>Se il prezzo di un titolo è alto rispetto alla capacità d'investimento, comprare frazioni di azioni.</li>
+    <p><b>Esempio di PAC dinamico:</b></p>
+    <ul><li>Se il settore è in forte crescita, aumento del capitale investito del 25-50%;</li>
+    <li>Se il settore è stabile ma non in forte trend, investire l'importo normale (es. 200€);</li>
+    <li>Se il mercato è incerto, ridurre l'investimento e accumulare liquidità.</li></ul>
+    
+    <h2>FASE 5: TAKE PROFIT E STOP LOSS DINAMICI</h2>
+    <p><i>Programma ha già convertito e calcolato TP e SL in automatico</i></p>
+    <p>In base alla durata dell'investimento, se trend è ancora positivo a TP raggiunto, si può alzare il target invece di vendere.</p>
+    
+    <h2>FASE 6: MONITORAGGIO E AGGIORNAMENTO DELLA STRATEGIA</h2>
+    <ul><li><b>Analisi settimanale:</b> Controllare l'andamento del portafoglio e aggiornare i segnale.</li>
+    <li><b>Analisi mensile:</b> Ribilanciare il PAC e modifica i livelli di investimento. </li>
+    <li><b>Analisi trimestrale:</b> Verificare i settori più forti e cambiare la strategia se necessario.</li></ul>
+    <h2>Conclusione:</h2>
+    <ul><li>Questa strategia permette di minimizzare il rischio grazie all'accumulo graduale.</li>
+    <li>Il sistema è abbastanza rigido da evitare investimenti sbagliati, ma flessibile per adattarsi alle fasi di mercato.</li>
+    <li>Con un aumento del capitale investito in base alla performance, il portafoglio può crescere in modo sostenibile nel tempo.</li></ul>
+    <p><b>Risultato:</b>Investire solo nei migliori titoli, con un rischio controllato e un'altra probabilità di rendimento positivo nel medio-lungo termine.</p>
+
+                <p><i><b>Disclaimer:</b> L'analisi serve per avere una panoramica generale, ma contengono errori sia tecnici che logici. Quindi per elaborare un piano d'investimento, affidarsi sempre a un professionista del settore (e abilitato.).</i></p>
+            </section>           
+
+            <footer>
+                <p>&copy; 2025 Riepilogo Reports - Tutti i diritti riservati</p>
+            </footer>
+            <script src="auth.js"></script>
+            <script src="controlloUtenteLoggato.js"></script>
+            
+        </body>
+    </head>
+    </html>
