@@ -1,0 +1,209 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin:0;
+    padding:0;
+}
+
+header{
+	position:fixed;
+    top:0;
+	width:100%;
+	background:#1E2A38;
+	padding:15px;
+	color:white;
+	z-index:1000;
+	}
+.nav-bar{
+	display:flex;
+	
+	align-items:left;
+}
+.nav-bar p{
+text-indent:20px;}
+.logo{
+	font-size:20px;
+	font-weight:bold;
+	}
+.table-container{
+	overflow-y:auto;
+	max-height: 300px;
+	border: 1px solid #ccc;
+}
+.vuoto div{
+   
+	}
+
+table{
+	width:100%;
+	border-collapse: collapse;
+}
+
+thead tr{
+	position:sticky;
+	top:0;
+	background:#333;
+	color:white;
+}
+th, td{
+	padding:10px;
+	border: 1px solid #352f44;
+	text-align:left;
+}
+
+
+
+tr:nth-child(even){
+            background-color:#f2f2f2;}
+            tr:hover{
+            background-color:lightgray;/** evidenzia riga **/
+            }
+            /** Inizio colore colonne**/
+            td:nth-child(9){
+            background-color:#a6b1e1;
+            }
+            td:nth-child(11){
+            background-color:#dcd6f7;
+            }
+            td:nth-child(14){
+            background-color:#fcff82;
+            }
+            td:nth-child(12){
+            background-color:#c2f69b;
+            }
+            td:nth-child(16){
+            background-color:#c2f69b;
+            }
+            td:nth-child(19){
+            background-color:#c2f69b;
+            }
+            /**fine colore colonne**/
+
+footer{
+	text-align:center;
+	padding: 15px;
+	background: #1E2A38;
+	color:white;
+	position:relative;
+	bottom:0;
+	width:100%;
+}
+.log-container{
+	background:white;
+	padding:20px;
+	text-align:center;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+nav ul{
+                list-style:none;
+                padding:0;
+                background:#34495e;
+                overflow:hidden;
+                text-align:center;
+            }
+            nav ul li{
+                display:inline;
+                padding:15px;
+            }
+            nav ul li a{
+                color:white;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            .container2{
+                max-width: 90%;
+                margin:20px auto;
+                padding:20px;
+                background: white;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                text-align:left;                
+                position:relative;
+                overflow-x:auto;/*scroll orizzontale*/
+                overflow-y:auto;/*scroll verticale*/
+                margin:10% auto;/*per non coprire con intestazione*/  
+                
+            }
+
+            .report-section{
+                border-top: 8px solid #2c3e50;  
+                border-left: 5px solid #2c3e50;
+                padding:15px;
+                margin-bottom:15px;
+                background: #f9f9f9;
+                border-radius: 5px;
+            }
+            .analisi-container{
+                display:flex;
+                justify-content:space-between;
+                margin-top:10px;
+            }
+            .analisi-dentro{
+                flex:1;
+                padding:15px;                             
+                border-left: 5px solid #4d818c;                
+                border-top: 5px solid #4d818c;  
+                margin-bottom:15px;
+                background: #f9f9f9;
+                border-radius: 5px;
+                /** per scrollare tabella**/
+                overflow:auto;
+                width:90%;
+                overflow-y:auto;
+            	max-height: 400px;
+            }
+
+
+
+.link a{
+         background-color:#34495e;
+         color:white;
+         text-decoration: none;
+         font-weight: bold;
+         padding:5px;
+         }
+.link a:hover{
+                background-color:#0056b3;
+                text-decoration: none;
+            }
+	
+.container{
+    background: white;
+    width: 300px;
+    padding: 20px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+input{
+    width: 90%;
+    padding:10px;
+    margin:10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;    
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color:white;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background: #0056b3;
+}
+p{
+    font-size: 14px;
+}
+a{
+    color:#007bff;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
