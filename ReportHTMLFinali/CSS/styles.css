@@ -51,9 +51,6 @@ th, td{
 	border: 1px solid #352f44;
 	text-align:left;
 }
-
-
-
 tr:nth-child(even){
             background-color:#f2f2f2;}
             tr:hover{
@@ -78,6 +75,55 @@ tr:nth-child(even){
             td:nth-child(19){
             background-color:#c2f69b;
             }
+            /**fine colore colonne**/
+            
+            /**inizio colore colonne Lista Tickers backtesting**/
+            
+thead trSecondoRep{
+	position:sticky;
+	top:0;
+	background:#333;
+	color:white;
+}
+.secondoRep{}
+
+.secondoRep trSecondoRep:nth-child(even){
+            background-color:#f2f2f2;}
+            tr:hover{
+            background-color:lightgray;/** evidenzia riga **/
+            }
+            /** Inizio colore colonne**/
+            td:nth-child(3){
+            background-color:#ffebbb;
+            }
+            td:nth-child(7){
+            background-color:#ffebbb;
+            }
+            td:nth-child(8){
+            background-color:#bbe4e9;
+            }
+            td:nth-child(9){
+            background-color:#bbe4e9;
+            }
+            td:nth-child(10){
+            background-color:#bbe4e9;
+            }
+            td:nth-child(11){
+            background-color:#eda1c1;
+            }
+            td:nth-child(12){
+            background-color:#6af79a;
+            }
+            td:nth-child(13){
+            background-color:#6af79a;
+            }
+            td:nth-child(14){
+            background-color:#6af79a;
+            }
+            td:nth-child(15){
+            background-color:#f27370;
+            }
+            
             /**fine colore colonne**/
 
 footer{
