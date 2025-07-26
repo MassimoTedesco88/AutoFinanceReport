@@ -5,6 +5,7 @@
         <meta name="viewport" content="width-device,initial-scale=1.0">
         <title>Report Finanziario Semplice</title>
         <link rel="stylesheet" href="styles.css">        
+        </head>
         <body><header>
 	<div class="nav-bar">
 		<span class="logo">FinTable</span> 		
@@ -31,48 +32,6 @@
 					<button type="submit">[ Cerca ]</button>
                 </form>
           <div id="results"> <b>[ Nessun risultato prodotto! - Ticker non trovato! ]</b></div>
-<script>	
-document.getElementById("tickerForm").addEventListener("submit",async function(e){
-e.preventDefault();
-const ticker = document.getElementById("ticker").value.trim().toUpperCase();
-const resultBox = document.getElementById("results");
-resultsBox.innerHTML = "Loading ....";
-try {
-	const response= await fetch('https://analisi-finale-ticker.vercel.app/api/cerca_ticker?ticker=${ticker}');
-	if(!response.ok) throw new Error("API request failed");
-	const data = await response.json();
-	if(Array.isArray(data) && data.lenght >0){
-		let table = "<table><thead><tr>";
-		//create table header
-		for (let key in data[0]){
-			table += '<th>${key}</th>';
-		}
-		table+="</tr></thead><tbody>";
-		//create rows
-		data.forEach(row => {
-			table+= "<tr>";
-			for (let key in row) {
-				table += '<td>${row[key]}</td>';
-			}
-			table+="</tr>";
-		});
-		table+="</tbody></table>";
-		resultsBox.innerHTML = table;
-	} else {
-		resultsBox.innerHTML = '<p>Dati non trovati per <strong>${ticker}</strong>.</p>';
-	}
-}
-catch (error) {
-	console.error(error);
-	resultsBox.innerHTML ='<p><i>Errore nella ricerca dei Dati </i></p>';
-}         
-</script>
-          
-                
-                
-                
-                
-
                 <p><i><b>Disclaimer:</b> L'analisi serve per avere una panoramica generale, ma contengono errori sia tecnici che logici. Quindi per elaborare un piano d'investimento, affidarsi sempre a un professionista del settore (e abilitato.).</i></p>
             </section>           
 
@@ -81,8 +40,8 @@ catch (error) {
 				<a href="https://de.linkedin.com/in/massimo-sedda-173416135?trk=people-guest_people_search-card" target=_"blank" rel="noopener noreferrer">myLinkedIn</a>
                 <p>&copy; 2025 Riepilogo Reports - Tutti i diritti riservati</p>
             </footer>
-            
+<script src="ReportHTMLFinali/Scripts/ricerca.js"></script>    
             
         </body>
-    </head>
+    
     </html>
