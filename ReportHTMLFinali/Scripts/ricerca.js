@@ -8,7 +8,8 @@ document.getElementById("tickerForm").addEventListener("submit",async function(e
 		const response= await fetch('https://analisi-finale-ticker.vercel.app/api/cerca_ticker?ticker=${ticker}');
 		if(!response.ok) throw new Error("API request failed");
 		const data = await response.json();
-		if(Array.isArray(data) && data.lenght >0){
+		console.log(data);//debug
+		if(data.lenght >0){ //Array.isArray(data) && 
 			let table = "<table><thead><tr>";
 			//create table header
 			for (let key in data[0]){
