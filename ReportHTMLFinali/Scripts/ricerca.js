@@ -13,6 +13,7 @@ document.getElementById("tickerForm").addEventListener("submit",async function(e
 			//create table header
 			for (let key in data[0]){
 				table += '<th>${key}</th>';
+				console.log(table);//debug
 			}
 			table+="</tr></thead><tbody>";
 			//create rows
@@ -20,11 +21,14 @@ document.getElementById("tickerForm").addEventListener("submit",async function(e
 				table+= "<tr>";
 				for (let key in row) {
 					table += '<td>${row[key]}</td>';
+					console.log(table);//debug
 				}
 				table+="</tr>";
 			});
 			table+="</tbody></table>";
 			resultsBox.innerHTML = table;
+			console.log(table);//debug
+			console.log(resultsBox);//debug
 		} else {
 			resultsBox.innerHTML = '<p>Dati non trovati per <strong>${ticker}</strong>.</p>';
 		}
