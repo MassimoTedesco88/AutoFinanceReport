@@ -5,11 +5,12 @@ document.getElementById("tickerForm").addEventListener("submit",async function(e
 	const resultsBox = document.getElementById("results");
 	resultsBox.innerHTML = "Loading ....";
 	try {
-		const response= await fetch('https://analisi-finale-ticker.vercel.app/api/cerca_ticker?ticker=${ticker}');
+		const response= await fetch('https://analisi-finale-ticker.vercel.app/api/cerca_ticker?ticker=${ticker}');// STUDIARE QUA l?ERRORE
+		console.log(response);
 		if(!response.ok) throw new Error("API request failed");
 		const data = await response.json();
 		console.log(data);//debug
-		if(data.lenght >0){ //Array.isArray(data) && 
+		if(Array.isArray(data) && data.lenght >0){ //
 			let table = "<table><thead><tr>";
 			//create table header
 			for (let key in data[0]){
