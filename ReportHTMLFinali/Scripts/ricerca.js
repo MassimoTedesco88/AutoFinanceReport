@@ -1,12 +1,15 @@
 document.getElementById("tickerForm").addEventListener("submit",async function(e){
 	e.preventDefault();
 	const ticker = document.getElementById("ticker").value.trim().toUpperCase();
-	console.log(ticker);
+	console.log(ticker);//debug
 	const resultsBox = document.getElementById("results");
+	
 	resultsBox.innerHTML = "Loading ....";
+	const url='https://analisi-finale-ticker.vercel.app/api/cerca_ticker?ticker=${encodeURIComponent(ticker)}';// STUDIARE QUA l?ERRORE
+	console.log(url);//debug
 	try {
-		const response= await fetch('https://analisi-finale-ticker.vercel.app/api/cerca_ticker?ticker=${ticker}');// STUDIARE QUA l?ERRORE
-		console.log(response);
+		const response= await fetch(url);
+		
 		if(!response.ok) throw new Error("API request failed");
 		const data = await response.json();
 		console.log(data);//debug
