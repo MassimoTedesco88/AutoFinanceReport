@@ -32,7 +32,8 @@ document.getElementById("tickerForm").addEventListener("submit",async function(e
 			});
 			
 			
-			p.textContent = testo;//assegna il testo al paragrafo ( x riga)
+			p.textContent = testo+"<hr>";//assegna il testo al paragrafo ( x riga)
+			
 			resultsBox.appendChild(p);});//aggiunge il paragrafo creato dentro al contenitore HTML		
 		
 	}
