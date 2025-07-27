@@ -17,13 +17,23 @@ document.getElementById("tickerForm").addEventListener("submit",async function(e
 		const data = await response.json();//converte la risposta in formato JSON		
 		console.log(data);//debug
 		
-		
-		data.forEach((row,i) => {
-			const p = document.createElement('p');
-			//costruisci stringa con colonne separate da ,
-			const rowText= Object.entries(row).map(([key,value]) => '${key}: ${value}').join(', ');
-			p.textContent = rowText;
-			resultsBox.appendChild(p);});		
+		resultsBox.innerHTML = "<h2>"+ticker+"</h2>";
+		data.forEach((row,i) => {//cicla su ogni riga ricevuta dal backend
+			const p = document.createElement('p');//crea un paragrafo per ogni riga
+			let testo='';// inizializza stringa vuota per contenuto riga
+			const entries= Object.entries(row);//prende tutte le coppie chiave/valore dell'oggetto row
+			entries.forEach((entry, index) => {//cicla su ogni coppia key,value della riga
+				const key = entry[0];//separa chiave e valore di ogni volonna
+				const value= entry[1];
+				testo += key+": "+value; //aggiunge alla stringa key e value
+				if (index < entries.lenght -1) { // aggiunge virgola sempre ma non all'ultimo elemento
+					testo += ", ";
+				}
+			});
+			
+			
+			p.textContent = testo;//assegna il testo al paragrafo ( x riga)
+			resultsBox.appendChild(p);});//aggiunge il paragrafo creato dentro al contenitore HTML		
 		
 	}
 	catch (error) {
