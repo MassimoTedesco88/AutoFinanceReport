@@ -1,4 +1,4 @@
-document.getElementById("tickerForm").addEventListener("submit",async function(e){
+document.getElementById("tickerForm").addEventListener("submit",async function(e){//inizio evento su submit del form tickerForm
 	e.preventDefault();
 	const ticker = document.getElementById("ticker").value.trim().toUpperCase();
 	console.log(ticker);//debug
