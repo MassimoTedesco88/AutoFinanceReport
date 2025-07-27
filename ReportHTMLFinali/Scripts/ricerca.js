@@ -11,8 +11,7 @@ document.getElementById("tickerForm").addEventListener("submit",async function(e
 	console.log(urlBase);//debug
 	console.log(url);//debug
 	try {
-		const response= await fetch(url);//chiama l'API su Vercel passando il nome come paramentro nella URL
-		
+		const response= await fetch(url);//chiama l'API su Vercel passando il nome come paramentro nella URL		
 		if(!response.ok) throw new Error("API request failed");
 		const data = await response.json();//converte la risposta in formato JSON		
 		console.log(data);//debug		
@@ -25,14 +24,12 @@ document.getElementById("tickerForm").addEventListener("submit",async function(e
 				const key = entry[0];//separa chiave e valore di ogni volonna
 				const value= entry[1];
 				testo += "<b>"+key+":</b> <span class='big'>"+value+"</span> | "; //aggiunge alla stringa key e value				
-				});
-			
-			});
-			p.textContent = testo+"<hr>";//assegna il testo al paragrafo ( x riga)
-			
-			resultsBox.appendChild(p);});//aggiunge il paragrafo creato dentro al contenitore HTML						
-			
-	}
+				});//chiude parentesi entries.forEach			
+			p.textContent = testo+"<hr>";//assegna il testo al paragrafo ( x riga)			
+			resultsBox.appendChild(p);//aggiunge il paragrafo creato dentro al contenitore HTML									
+			});//chiude parentesi data.forEach
+		}//chiude parentesi try
+
 	catch (error) {
 		console.error(error);
 		resultsBox.innerHTML ='<p><i>Errore nella ricerca dei Dati </i></p>';
