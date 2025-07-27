@@ -34,13 +34,13 @@ document.getElementById("tickerForm").addEventListener("submit",async function(e
 	const resultsBox = document.getElementById("results");
 	
 	resultsBox.innerHTML = "Loading ....";
-	const url='https://analisi-finale-ticker.vercel.app/api/cerca_ticker?ticker=${encodeURIComponent(ticker)}';// STUDIARE QUA l?ERRORE
+	const url='https://analisi-finale-ticker.vercel.app/api/cerca_ticker?ticker=${encodeURIComponent(ticker)}';// encodeURIComponent() trasforma una stringa in formato sicuro da usare in URL
 	console.log(url);//debug
 	try {
-		const response= await fetch(url);
+		const response= await fetch(url);//chiama l'API su Vercel passando il nome come paramentro nella URL
 		
 		if(!response.ok) throw new Error("API request failed");
-		const data = await response.json();
+		const data = await response.json();//converte la risposta in formato JSON
 		console.log(data);//debug
 		if(Array.isArray(data) && data.lenght >0){ //
 			let table = "<table><thead><tr>";
