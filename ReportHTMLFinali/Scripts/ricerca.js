@@ -24,8 +24,10 @@ document.getElementById("tickerForm").addEventListener("submit",async function(e
 				const key = entry[0];//separa chiave e valore di ogni volonna
 				const value= entry[1];
 				testo += "<b>"+key+":</b> <span class='big'>"+value+"</span> | "; //aggiunge alla stringa key e value				
+				console.log(testo);
 				});//chiude parentesi entries.forEach			
 			p.innerHTML = testo+"<hr>";//assegna il testo al paragrafo ( x riga)			
+			console.log(p);
 			resultsBox.appendChild(p);//aggiunge il paragrafo creato dentro al contenitore HTML									
 			});//chiude parentesi data.forEach
 		}//chiude parentesi try
