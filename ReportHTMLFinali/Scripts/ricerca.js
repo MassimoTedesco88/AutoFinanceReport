@@ -38,7 +38,7 @@ document.getElementById("tickerForm").addEventListener("submit",async function(e
 			console.log(table);//debug
 			console.log(resultsBox);//debug
 		} else {
-			resultsBox.innerHTML = '<p>Dati non trovati per <strong>${ticker}</strong>.</p>';
+			resultsBox.innerHTML = '<p>Dati non trovati per <strong>'+ticker+'</strong></p>';
 		}
 	}
 	catch (error) {
