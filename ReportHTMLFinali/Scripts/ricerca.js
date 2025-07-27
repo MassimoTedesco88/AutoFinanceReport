@@ -6,7 +6,7 @@ document.getElementById("tickerForm").addEventListener("submit",async function(e
 	
 	resultsBox.innerHTML = "Loading ....";
 	const urlBase='https://analisi-finale-ticker.vercel.app/api/cerca_ticker?ticker=$';// encodeURIComponent() trasforma una stringa in formato sicuro da usare in URL
-	const url=urlBase+ticker;//unione tra due stringhe
+	const url=urlBase+ticker;//unione tra due variabili di tipo stringa
 	console.log(urlBase);//debug
 	console.log(url);//debug
 	try {
