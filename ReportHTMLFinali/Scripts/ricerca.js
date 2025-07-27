@@ -26,10 +26,11 @@ document.getElementById("tickerForm").addEventListener("submit",async function(e
 				const value= entry[1];
 				testo += "<b>"+key+":</b> <span class='big'>"+value+"</span> | "; //aggiunge alla stringa key e value				
 				});
+			
+			});
 			p.textContent = testo+"<hr>";//assegna il testo al paragrafo ( x riga)
 			
-			resultsBox.appendChild(p);});//aggiunge il paragrafo creato dentro al contenitore HTML				
-			});		
+			resultsBox.appendChild(p);});//aggiunge il paragrafo creato dentro al contenitore HTML						
 			
 	}
 	catch (error) {
