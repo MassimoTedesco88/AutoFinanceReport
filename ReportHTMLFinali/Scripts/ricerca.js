@@ -1,3 +1,32 @@
+document.getElementById("ListaForm").addEventListener("submit",async function(e){
+	e.preventDefault();
+	
+	const resultsBox = document.getElementById("results2");
+	
+	resultsBox.innerHTML = "Loading ....";
+	const url='https://analisi-finale-ticker.vercel.app/api/lista_ticker';// STUDIARE QUA l?ERRORE
+	console.log(url);//debug
+	try {
+		const response= await fetch(url);
+		
+		if(!response.ok) throw new Error("API request failed");
+		const data = await response.json();
+		console.log(data);//debug
+		if(Array.isArray(data) && data.lenght >0){ //
+			const tickerList = data.map(row => row.ticker).join(', ');
+			resultsBox.innerHTML = tickerList;
+		} else {
+			resultsBox.innerHTML = '<p>Dati non trovati .</p>';
+		}
+	}
+	catch (error) {
+		console.error(error);
+		resultsBox.innerHTML ='<p><i>Errore nella ricerca dei Dati </i></p>';
+	}
+});
+
+
+
 document.getElementById("tickerForm").addEventListener("submit",async function(e){
 	e.preventDefault();
 	const ticker = document.getElementById("ticker").value.trim().toUpperCase();
