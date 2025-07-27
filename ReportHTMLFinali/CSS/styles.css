@@ -253,3 +253,12 @@ a{
 a:hover{
     text-decoration: underline;
 }
+.big{
+	font-size:1.5rem;
+	color:#233142;
+	text-decoration: underline;
+
+}
+.big:hover{
+	text-decoration: none;
+	color:#5585b5;}

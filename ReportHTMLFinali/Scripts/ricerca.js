@@ -25,9 +25,8 @@ document.getElementById("tickerForm").addEventListener("submit",async function(e
 			entries.forEach((entry, index) => {//cicla su ogni coppia key,value della riga
 				const key = entry[0];//separa chiave e valore di ogni volonna
 				const value= entry[1];
-				testo += key+": "+value; //aggiunge alla stringa key e value
-				if (index < entries.lenght -1) { // aggiunge virgola sempre ma non all'ultimo elemento
-					testo += ", ";
+				testo += "<b>"+key+":</b> <span class='big'>"+value+"</span> | "; //aggiunge alla stringa key e value
+				
 				}
 			});
 			
