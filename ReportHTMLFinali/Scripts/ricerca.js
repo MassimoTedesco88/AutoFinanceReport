@@ -17,7 +17,8 @@ document.getElementById("tickerForm").addEventListener("submit",async function(e
 		const data = await response.json();//converte la risposta in formato JSON		
 		console.log(data);//debug
 		
-		rows.forEach((row,i) => {
+		
+		data.forEach((row,i) => {
 			const p = document.createElement('p');
 			//costruisci stringa con colonne separate da ,
 			const rowText= Object.entries(row).map(([key,value]) => '${key}: ${value}').join(', ');
